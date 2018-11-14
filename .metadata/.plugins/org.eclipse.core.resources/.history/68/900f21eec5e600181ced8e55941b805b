@@ -1,0 +1,5 @@
+package br.algamoneyapi.event;
+
+public class RecursoCriadoEvent {
+
+}

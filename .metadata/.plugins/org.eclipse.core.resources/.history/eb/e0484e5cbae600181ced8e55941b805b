@@ -1,0 +1,9 @@
+package br.algamoneyapi.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.algamoneyapi.model.Categoria;
+
+public interface PessoaRepository extends JpaRepository<Categoria, Long>{
+
+}

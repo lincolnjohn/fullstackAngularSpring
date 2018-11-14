@@ -1,0 +1,351 @@
+Curso Full Stack e Spring - Algaworks --------------------------------------------------[24/08/2018]
+
+	Modulo 1 - Introdução ao REST:
+
+		Aula 1.1 - Introdução ao curso:
+
+			- Angular, REST e SpringBoot.
+
+			- JavaScript, TypeScript, Html e Css.
+			- O projeto exemplo começa com o desenvolvimento Back-End, serviço RESTFull.
+
+			- A parte de apresentação sera Front-End, Angular.
+
+		Aula 1.2 - Suporte:
+
+		Aula 1.3 -  O que é SOFEA:
+
+			- SOFEA (Service-Oriented Front-End Architecture).
+
+			- Remover toda lógica de apresentação do servidor e levar para o cliente.
+
+			- No inicio da conexão faz o download do Html e Css para o cliente, e depois so tráfega dados, como
+			padrão JSON.
+
+			- Desenvolvimento Assíncrono do front-end e back-end.
+
+			- Fica mais facil escalabilidade e interoperabilidade (vários clientes).
+
+			- Melhora a experiência do usuário.
+
+		Aula 1.4 - O que é REST:
+		
+			- Uma forma de integrar sistemas.
+
+			- Front-end -> REST -> Back-end.
+
+			- REST é uma arquitetura com alguns principios que permitem integrar sistemas.
+
+			- REST-Full é uma implementação da arquitetura REST.	
+
+			- API-REST (Aplicattion Program Interface) expõem serviços para aplicações externas.
+
+		Aula 1.5 - Projeto Exemplo:
+		
+			- Um sistema de lançamento financeiro com débito e crédito.
+
+		Aula 1.6. Ambiente de desenvolvimento REST:
+
+			- SpringBoot, SpringMvc, SpringSecurity e SpringJPA.
+
+			- STS (IDE baseada no Eclipse).
+
+			- Postman (testar as Api-Rest).
+
+			- Pode testar as requisições independente do Front-End.
+
+			- Banco de Dados MySql.
+			
+------------------------------------------------------------------------------------------[28/08/2018]
+
+		Aula 1.7. Testando APIs com Postman:
+
+			- Utilizando Postman para testar os end-points do Back-End.
+
+			- Utilizar o site www.mocky.io para simular acesso ao Back-End. Vai gerar uma url que depois você coloca no Postman para
+			verificar a resposta.
+
+		Aula 1.8. Introdução ao protocolo HTTP:
+		
+			- Protocolo Http baseado em uma requisição(Request) e obtem uma resposta(Response).	
+
+			- O Http tem um verbo que pode ser GET,POST,PUT,DELETE....
+
+			- O Http tem uma Url para identificar para onde vou fazer a chamada.
+
+			- No Http posso pasar Headers(informações a mais) e Parâmetros(filtros).
+
+			- O Http tem respostas com código(200, 404,500...) identificando o que aconteceu com a requisição recebida.
+
+			- A resposta tem Headers(Content-type)tipo de conteúdo da resposta, tem o corpo da resposta(body) os dados.
+
+	Modulo 2 - Fundamentos do REST:
+
+		Aula 2.1. O que é um recurso?
+
+			- Um recurso tem que ter uma maneira de ser identificado (id por exemplo), uma Uri(uma url completa, com parte que serve 
+			para identificar um recurso específico).
+
+		Aula 2.2. Representações de um recurso:
+		
+			- A mesma Url me traz o mesmo recursos com representações diferentes, que pode ser uma Imagem, Json ou Xml.
+
+			- O recurso pode ter várias representações.	
+
+------------------------------------------------------------------------------------------[29/08/2018]
+
+		Aula 2.3. Modelo de maturidade Richardson - Nível 0:
+
+			- Martin Fowler descreveu o modelo de Richardson para o REST, indo do nível 0 ao 3.
+
+			- No nível 0 não é REST:
+
+				* Http somente como transporte.
+
+				* A solicitação é feita com um único serviço e o código de resposta é a mesma independente de sucesso ou não.
+
+				* Se aproxima de chamar um método remoto.
+
+		Aula 2.4. Modelo de maturidade Richardson - Nível 1:
+			
+			- O nível 1 ainda não é REST:
+
+				* Já é utilizado o conceito de recurso, passando um identificador.		
+
+				* O código de resposta é unico independete do sucesso ou não.
+
+		Aula 2.5. Modelo de maturidade Richardson - Nível 2:
+		
+			- O nível 2 já pode ser considerado REST:
+
+				* Já é utilizado os verbos Http (post,get,put....).
+
+				* Posso passar na requisição parâmetros e filtros (query string).
+
+				* A resposta da requisição já modifica o código de retorno.
+
+		Aula 2.6. Modelo de maturidade Richardson - Nível 3	:
+
+			- O nível 3 é um REST completo:
+
+				* Utiliza os verbos Http (post,get,put....).
+
+				* A resposta da requisição já modifica o código de retorno. 
+
+				* Posso passar na requisição parâmetros e filtros (query string).
+
+				* A resposta traz mais informações como a URI para acessar o recurso.
+
+		Aula 2.7. HATEOAS:
+
+			- Hypertexto As Engine Of Application State - HATEOAS.
+
+			- A resposta traz informações adicionais sobre utilizar a URI, para novas ações. Essas informações
+			podem ser influenciadas de acordo com regras de négocios.
+
+			- A resposta HATEOS pode ser utilizado para o Front-End ter um determinado comportamento.
+
+------------------------------------------------------------------------------------------[10/09/2018]		
+		
+		Aula 2.8. Segurança de APIs REST:
+
+			- API privada ou pública.
+
+			- HTTPS o http está criptografado.
+
+			- Autenticação (quem é você ) e Autorização (áreas que você pode acessar).
+
+			- Tipos de segurança para o Https Basic, Digest, Certificados e Tokens.
+
+			- OAuth foi criado para fazer autorização. Você é autorizado por outro sites que não o seu.
+
+		Aula 2.9. Idempotência:
+		
+			- Um método é considerado idempontente se o resultado produzido por ele é o mesmo independente
+			do número de vezes que for executado.
+
+	Modulo 3 - Primeiras consultas e cadastros na API:
+
+		Aula 3.1. Criando o projeto da API:
+
+			- Utilizando o STS para iniciar o projeto, através do Spring Boot. Selecionar as dependência da Web, Jpa e Devtools.
+
+			- Vou utilizar a versão 2.0.4 do spring boot.
+
+		Aula 3.2. Conectando ao MySQL:
+		
+			- Configuração do Banco de Dados MySQL no arquivo /algamoney-api/src/main/resources/application.properties.
+
+			- Utilizar WorkBench para gerenciar o MySql.
+
+		Aula 3.3. Migração de dados com Flyway:
+		
+			- Não utilizar a geração de tabelas no banco com Hibernate. Em ambiente de produção deve ser utilizado uma 
+			ferramenta de migração.
+
+			- Vamos utilizar a ferramenta de migração Flyway.
+
+			- Vamos criar scripts para o banco de dados de forma incremental, com isso garantindo rastreabilidade nas 
+			versões do banco.
+				
+------------------------------------------------------------------------------------------[11/09/2018]		
+
+		Aula 3.4. Consultando primeiro recurso com GET:
+
+			- A tabela Categoria está populada, então vamos implementar o GET para retornar uma lista de categórias.
+
+			- Criar uma interface de Categoria que extende a JpaRepository (framework spring), que tem vários métodos 
+			de manipulação de banco de dados.
+
+			- Criar a classe que vai expor o recursos de Categoria. Um controlador rest.
+
+		Aula 3.5. Coleção vazia, o que retornar?
+		
+			- O correto é retornar uma lista vazia, quando não tiver os dados.
+
+		Aula 3.6. Cadastrando nova categoria com POST:
+
+			- Utilizar o Post para incluir uma Categoria, enviar com resposta o código 201 e o "Location" que monta a
+			uri com a localização do novo recurso (categoria).
+
+			- Pode também ser utilizado para a resposta ser enviada para "body" do Post Http.
+
+			- Implementar a busca de uma categoria via Get, passando o código da categória.
+
+			- O exemplo está utilizando o método findOne() da versão 1.5 do Spring Boot, como estou utilizando a versão
+			2.0.4 este método não funciona neste caso tive que usar o método findById() que tem como resposta um objeto
+			to tipo Optional<Categoria>.
+
+|------------------------------------------------------------------------------------------>[26/09/2018]
+
+		Aula 3.7. Desafio: Retornar 404 caso não exista a categoria:
+
+			- Na versão Spring Boot 2.0.4 foi feita alteração para desenvolver o desafio:
+
+				@GetMapping("/{codigo}")
+				public ResponseEntity<Optional<Categoria>> buscarPeloCodigo(@PathVariable Long codigo) {
+					
+					Optional<Categoria> categoria = categoriaRepository.findById(codigo);
+					
+					return categoria.isPresent()  ? ResponseEntity.ok(categoria) : ResponseEntity.notFound().build() ; 
+				}
+
+		Aula 3.8. Validando atributos desconhecidos:
+
+			- Utilizar a biblioteca jackson, que faz a converção de objeto java para jason e vice-versa.
+
+			- O jackson permite a deserialização que é transforma de jason para objeto java.
+
+			- No retorno da requisição quanto ao status code http:
+
+				* 2xx -> Sucesso.
+
+				* 4xx -> Erro do cliente.
+
+				* 5xx -> Erro no servidor/serviço.
+
+		Aula 3.9. Tratando erros com ExceptionHandler:
+
+			- Criar uma classe para tratar as excessões.
+
+			- Para a classe capturar a excessão esta precisar ser um controlador Spring que observa toda aplicação (@ControllerAdvice).
+
+|------------------------------------------------------------------------------------------>[07/11/2018]
+
+		Aula 3.10. Validando valores inválidos com Bean Validation:
+
+			- É preciso validar valores enviados para API-RestFull.
+
+			- Tratar a mensagem de erro, para ser mais amigável.
+
+			- Quando colocamos a dependência do spring-boot-jpa já é adicionado o Hibernate Validation.
+
+			- Para personalizar as mensagens do Bean Validation, criar um arquivo "ValidationMessages.properties". Tratar a mensagem
+			de validação na classe "AlgamoneyExceptionHandler".
+
+			- Para acessar a mensagem referente a notação, você acessa a classe e no atributo message tem o valor de referência
+			que deve ser invocada pelo sistema.
+
+		Aula 3.11. Desafio: Criando o cadastro de pessoa:
+		
+			- A classe Pessoa tem uma classe associada a ela "Embedded - Embarcada" Endereco, não é uma nova tabela mais uma classe que 
+			ajuda organizar a classe Pessoa.
+
+|------------------------------------------------------------------------------------------>[12/11/2018]
+
+		Aula 3.11. Desafio: Criando o cadastro de pessoa (continuação) :
+
+			- Entidade Pessoa : 
+
+				* nome: String
+				* ativo: boolean
+
+				*<<embedded>> Endereço:(não é uma tabela no banco de dados, uma classe que ajuda a organizar a classe Pessoa).
+				
+					* logradouro: String
+					* numero: String
+					* complemento: String
+					* bairro: String
+					* cep: String
+					* cidade: String
+					* estado: String
+
+			- A classe (embedded) Endereço não tem identificador.
+			
+			- No banco de dados vai ser apenas uma tabela "pessoa", com todos os campos das classes Pessoa e Endereço.
+
+			- No Postman a requisição vai ser construida:
+
+				* [post] localhost:8080/pessoas (raw) (json/application/json)
+				* {
+					"nome":"xxxxxxxxxxx",
+					"endereco":{
+						"logradouro":"xxxxxxx",
+						"numero":"xxxxxxx",
+						"bairro":"xxxxxxx",
+						"cep":"xxxxxxx",
+						"cidade":"xxxxxxx",
+						"estado":"xxxxxxx"
+					},
+					"ativo":"xxx"
+				}
+
+			- Para criar arquivo de migração do flayway:
+				
+				* Opção criar arquivo na pasta /algamoney-api/src/main/resources/db/migration/V02__criar_e_registrar_pessoas.sql.
+
+				* Quando executar o projeto pelo Spring, o arquivo do de migração do flayway é executado no banco de dados.
+
+		Aula 3.12. Usando eventos para adicionar header Location:
+		
+			- Toda vez que eu quiser utilizar header location eu vou dispara um evento.
+
+			- Criar uma classe responsável em lançar o evento e outra para escutá-lo. 		 	
+
+	
+	Modulo 4 - Atualização e remoção de recursos na API:
+
+		Aula 4.1. Removendo pessoa com DELETE:
+
+			- O retorno do Delete pode ser vazio, então posso usar o HttpStatus 204 (operação foi um sucesso e não tenho 
+			nada para retornar).
+
+
+
+			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

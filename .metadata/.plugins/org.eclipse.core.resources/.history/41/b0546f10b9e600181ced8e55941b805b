@@ -1,0 +1,5 @@
+package br.algamoneyapi.model;
+
+public class Pessoa {
+
+}

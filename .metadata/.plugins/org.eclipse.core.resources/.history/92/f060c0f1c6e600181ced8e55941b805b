@@ -1,0 +1,5 @@
+package br.algamoneyapi.event.listener;
+
+public class RecursoCriadoListener {
+
+}

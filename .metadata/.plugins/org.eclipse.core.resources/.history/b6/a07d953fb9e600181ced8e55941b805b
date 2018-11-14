@@ -1,0 +1,19 @@
+package br.algamoneyapi.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="pessoa")
+public class Pessoa {
+	
+	private Long codigo;
+	
+	private String nome;
+	
+	private Boolean ativo;
+	
+	private Endereco endereco;
+	
+
+}
