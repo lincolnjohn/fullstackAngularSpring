@@ -330,11 +330,46 @@ Curso Full Stack e Spring - Algaworks ------------------------------------------
 			- O retorno do Delete pode ser vazio, então posso usar o HttpStatus 204 (operação foi um sucesso e não tenho 
 			nada para retornar).
 
+|------------------------------------------------------------------------------------------>[14/11/2018]
 
+		Aula 4.2 - Sobre atualização de recursos REST:
+
+			- Para atualização de recursos REST usamos o verbo Http "PUT".
+
+			- Podemos utilizar urls(caminhos) diferentes para cada tipo de atualização, se for necessária caso seja parcial,
+
+			- Outra abordagem é utilizar o Patch (Json merge patch), não vai ser utilizada no nosso exemplo.
+
+
+|------------------------------------------------------------------------------------------>[15/11/2018]
+		
+		Aula 4.3 - Atualizando pessoa com PUT (atualização completa):
+
+			- Na video aula é apresentado a solução "findOne(codigo)", mas a versão mais nova do Spring deve ser utilizada
+			"Pessoa pessoaSalva = pessoaRepository.findById(codigo).get();".
+
+			- Atualização vinda de dúvidas no curso:
+
+				* o método get() do pessoaRepository.findById retorna uma exception do tipo NoSuchElementException caso 
+				não encontre nenhum valor para o código informado. Nesse caso, para realizar o tratamento de erros, eu 
+				adicionei a referida classe (NoSuchElementException) no método handleEmptyResultDataAccessException da classe 
+				AlgamoneyExceptionHandler e mudei o primeiro parâmetro para uma exception mais genérica.
+
+				* @ExceptionHandler({ EmptyResultDataAccessException.class, NoSuchElementException.class })
+				public ResponseEntity<Object> handleEmptyResultDataAccessException(RuntimeException ex,
+				WebRequest request) {
+
+			- É uma boa prática criar uma classe de serviço para ser a responsável pelas regras de negócio, tirando está
+			responsabilidade das classes de controle (resource).
+
+		Aula 4.4. Implementando atualização parcial com PUT:
+
+			- Na url eu tenho que descrever qual a propriedade vai ser atualizada.
+
+		
 
 			
 	
-
 
 
 
