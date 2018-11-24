@@ -366,7 +366,44 @@ Curso Full Stack e Spring - Algaworks ------------------------------------------
 
 			- Na url eu tenho que descrever qual a propriedade vai ser atualizada.
 
+|------------------------------------------------------------------------------------------>[16/11/2018]
 		
+	Módulo 5 - Relacionamentos entre recursos REST:
+
+		Aula 5.1. Criando a migração e entidade de lançamento:
+
+			- A entidade Lançamento tem um relacionamento com Categoria, Pessoa e Tipo de Lançamento(vai ser um Enum).
+
+			- Muitos Lançamentos podem ter uma Categoria, então temos um relacionamento "@ManyToOne".
+
+			- Muitos Lançamentos podem ter uma Pessoa, então temos um relacionamento "@ManyToOne".
+
+			- Utilizar FlayWay para incluir a tabela lançamento no banco de dados.
+
+		Aula 5.2. Desafio: Lista e busca de lançamentos:
+
+			- É preciso adicionar no pom.xml a dependência do Hibernate e do Jackson (faz a conversão do Java para Json e 
+			vice versa) para o Java8 tratar o tipo "LocalDate".
+
+			- E para visualizar a data no padrão internacional yyyy-MM-dd no PostMan é preciso alterar application.properties.
+
+		Aula 5.3. Desafio: Cadastrando o primeiro lançamento:
+
+			- Seguir o que já implementado em Pessoa.
+
+		Aula 5.4. Validando inconsistências:
+
+			- É necessário tratar quando não for informado corretamente o código do cliente e a categória, para não exibir um
+			erro 500 internal server.
+
+			- Para tratar a exceção, vamos capturar esta na classe AlgamoneyExceptionHandler.
+
+			- Adicionar no pom.xml a biblioteca "commons-lang3" que vai permitir pegar a causa da exceção. 
+
+
+
+
+
 
 			
 	
