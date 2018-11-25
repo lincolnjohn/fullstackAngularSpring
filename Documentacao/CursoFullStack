@@ -400,6 +400,53 @@ Curso Full Stack e Spring - Algaworks ------------------------------------------
 
 			- Adicionar no pom.xml a biblioteca "commons-lang3" que vai permitir pegar a causa da exceção. 
 
+|------------------------------------------------------------------------------------------>[24/11/2018]
+
+		Aula 5.5. Validando lançamento com Bean Validation:
+
+			- Inserir as mensagens de validação para lançamento, no arquivo "messages.properties".
+
+			- Inserir as anotações do Bean Validation para a classe "Lancamento".
+
+		Aula 5.6. Regra para não salvar pessoa inativa:
+
+			- Introduzir uma regra de negócio em que uma pessoa inativa não pode ter lançamento.
+
+			- Como temos criar uma regra de negócio a boa prática recomenda que se crie uma classe de serviço para lançamento.
+
+			- Como estou usando uma versão mais nova do SpringBoot (2.0), não posso usar o método "findOne()" mas "findById()".
+			Entretanto com esse método eu tenho referência a um tipo Optional<Pessoa>, que para ter acesso ao método "isInativo()"
+			da classe Pessoa tenho que chamar um método "pessoa.get().isInativo()".
+
+			- O tratamento da exceção da pessoa inativa pode ser feita no própio controlador.
+
+		Aula 5.7. Implementando pesquisa de lançamento com Metamodel:
+
+			- Fazer a pesquisa de lançamento utilizando o Metamodel do Spring Data JPA.
+
+			- Criar uma classe que representa os campos de filtro para lançamento, que eu quero pesquisar.
+
+			- Utilizar a anotação "@DateTimeFormat(pattern="yyyy-MM-dd")" para formatar os campos datas do filtro.
+
+			- Utilizar a Criteria do JPA, já que a Criteria do Hibernate descontinuou.
+
+			- Para criar os meta modelos:
+
+				* Seleciona o projeto >Propriedades> Java compiler> Annotation Processing.
+
+				* Seleciona opção "Enable project specif setting".
+
+				* Informa onde vai gerar as classes "src/main/java"
+
+				* Seleciona a opção "Factory Path".
+
+				* Seleciona a opção "Enable project specific settings".
+
+				* Adiciona uma Jar Externo "hibernate-jpamodelgen", vai criar meta modelos das classes model.
+
+
+
+
 
 
 
