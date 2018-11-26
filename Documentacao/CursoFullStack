@@ -445,6 +445,43 @@ Curso Full Stack e Spring - Algaworks ------------------------------------------
 				* Adiciona uma Jar Externo "hibernate-jpamodelgen", vai criar meta modelos das classes model.
 
 
+|------------------------------------------------------------------------------------------>[25/11/2018]
+
+	Aula 5.8. Desafio: Removendo lançamentos
+
+		- Implementar a funcionalidade de remover lançamento.
+
+		- Seguir o mesmo procedimento feito em "PessoaResource".
+
+	Aula 5.9. Implementando a paginação de lançamentos:
+
+		- Adicionar parâmetros para a paginação de lançamento.
+
+		- O Spring já disponibiliza parâmetros de paginação, via a classe "Pageable" .
+
+		- É preciso adicionar restrições de paginação na query.
+
+		- Criar uma criteria para calcuar o total de resgistros filtrados.
+
+
+Módulo 6 - Segurança da API:
+
+	Aula 6.1. Implementando autenticação Basic:
+
+		- Implementar autenticação login e senha na API Rest.
+
+		- Informar a dependência do Spring Security.
+
+		- Nesse exemplo vamos inicialmente utilizar Security Basic. E vamos informar usuário e senha em memória.
+
+		- Para informar usuário e senha é preciso passar a informação através do "Headers" da requisição.
+
+		- Alterar o exemplo da aula para a nova versão do Spring boot 2.
+
+
+
+
+
 
 
 
