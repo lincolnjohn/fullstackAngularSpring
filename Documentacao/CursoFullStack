@@ -476,10 +476,51 @@ Módulo 6 - Segurança da API:
 
 		- Para informar usuário e senha é preciso passar a informação através do "Headers" da requisição.
 
-		- Alterar o exemplo da aula para a nova versão do Spring boot 2.
+		- Alterar o exemplo da aula para a nova versão do Spring boot 2. Incluir objeto "BCryptPasswordEncoder", chamando o método
+		para criptografar a senha.
 
 
+|------------------------------------------------------------------------------------------>[03/12/2018]
 
+	Aula 6.2. Fluxo básico do OAuth:
+
+		- OAuth 2 é um framework de autorização para o Http.
+
+		- Elementos básico no fluxo do OAuth:
+
+			* Usuário que possui login e senha.
+
+			* Sistema cliente (desktop, web, mobille ...).
+
+			* Servidor de Autorização (Authorization Server).
+
+			* Servidor que tem os recursos (Resource Server).
+
+		- Usuário --> App --(solicita um token) -->	Authorization Server --> App -- (com um token solicita recurso)--> Resource Server
+
+		- Token é uma string com um código de autorização para acessar um recurso.
+
+		- OAuth implementa vários fluxos de autorização.
+
+
+	Aula 6.3. Implementando segurança com OAuth 2 e Password Flow:
+	
+		- Solução para o Spring boot 2:
+
+		https://www.algaworks.com/forum/
+		topicos/62343/prezados-estou-executando-o-curso-com-a-versao-2-0-0-release-do-spring-boot-ate-entao-eu-nao/
+
+|------------------------------------------------------------------------------------------>[05/12/2018]
+
+	Aula 6.3 - (continuação):
+
+		- Depois de seguir as orientações do forum para adaptar o exemplo ao SpringBoot2. Não deu erro na inicialização do sistema.
+
+		- Com a implantação do OAuth 2 as requisições não podem seguir "Authorization" Basic Auth.
+
+		- Com a implantação do OAuth novos end-points foram adicionados.
+
+		
 
 
 
