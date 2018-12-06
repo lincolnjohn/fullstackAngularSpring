@@ -520,7 +520,39 @@ Módulo 6 - Segurança da API:
 
 		- Com a implantação do OAuth novos end-points foram adicionados.
 
-		
+|------------------------------------------------------------------------------------------>[06/12/2018]		
+
+	Aula 6.4 - JSON Web Tokens - JWT:
+
+		- O JWT um token mais completo.
+
+		- Site de referência https://jwt.io
+
+		- O JWT é dividido em Header, Payload (dados) e Verify Signature(assinatura de validação do token).
+
+	
+	Aula 6.5 - configurando JWT no projeto:
+	
+		- Adicionar dependência no pom.xml .
+
+		- Utilizar o site https://jwt.io para fazer o debug do token gerado.
+
+	
+	Aula 6.6 - Renovando o access token com o refresh token:
+
+		- Você determina quanto tempo o token tem validade.
+
+		- O refresh token permite atualizar um outro access token sem a necessidade de pedir usuário e senha novamente.
+
+		- Um tempo curto para o access token é recomendado por questões de segurança.
+
+		- O refresho token deve ser armazenado em um cookie seguro.
+
+		- Apresentava erro (UserDetailsService) seguir dica do forum:
+
+			*https://www.algaworks.com/forum/
+			topicos/62508/para-funcionar-no-spring-boot-2-continuando-minha-descricao-que-postei-nos-comentarios-da-aula-6-3/
+
 
 
 
