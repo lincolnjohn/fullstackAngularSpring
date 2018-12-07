@@ -553,6 +553,54 @@ Módulo 6 - Segurança da API:
 			*https://www.algaworks.com/forum/
 			topicos/62508/para-funcionar-no-spring-boot-2-continuando-minha-descricao-que-postei-nos-comentarios-da-aula-6-3/
 
+|------------------------------------------------------------------------------------------>[07/12/2018]
+
+	Aula 6.7. Movendo o refresh token para o cookie:
+
+		- As boas práticas de segurança recomendam que aplicação não tenha acesso direto ao refresh token.
+
+		- Retirar o refresh token do corpo(body) da resposta e colocar em um cookie seguro (https).
+
+		- Antes do http enviar a resposta intercepto o post com o body da response, capturando o refresh token.
+
+		- O cookie criado deve somente ser utilizado em Http e segurança com Https(para produção).
+
+		- No Postman deve ser desmarcada do body a opção refresh token, com isso ele não envia este mas envia o refresh token
+		pelo cookie.
+
+		- Aplicação deve capturar do cookie e colocar na requisição.
+
+	Aula 6.8. Movendo o refresh token do cookie para a requisição:
+	
+		- Criar uma classe que vai ser um filtro que captura a requisição com alta prioridade.
+
+		- Criar uma nova requisição a partir da requisição capturada e inserir o novo refresh token via cookie.	
+
+	Aula 6.9. O que é CORS?:
+	
+		- Os browses tem uma proteção de segurança onde o javascript somente pode fazer requisição para o mesmo
+		servidor que originou.
+
+		- As exceções so podem ser feitas pelo CORS (http access control), requisições http de origens diferentes.
+
+		- Com anotação do spring "@CrossOrigin" já pertime que objeto seja acessado de diversas origens.
+
+		- O CORS não está totalmente integrado com OAuth 2.
+
+	Aula 6.10. Criando filtro para CORS:
+	
+		- O filtro que captura a requisição adiciona header http na resposta.
+
+		- Baixei dois prgramas html, que com JavaScript evocam o endpoint de categorias e o token access. Como tenho python
+		instalado para chamar o servidor http:
+
+			* $>python -m SimpleHTTPServer 8000
+
+		
+
+
+
+
 
 
 
