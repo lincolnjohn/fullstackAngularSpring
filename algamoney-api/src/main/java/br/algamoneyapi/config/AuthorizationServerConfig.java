@@ -27,13 +27,21 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		// TODO Auto-generated method stub
 		clients.inMemory()
-			.withClient("angular")
-			.secret("{noop}@ngul@r0")
-			//.secret(passwordEncoder().encode("@ngul@r0"))
-			.scopes("read","write")
-			.authorizedGrantTypes("password","refresh_token")
-			.accessTokenValiditySeconds(20)
-			.refreshTokenValiditySeconds(3600*24);
+				.withClient("angular")
+				.secret("$2a$10$HxWqk8PAl1iV4hRj/EA2tOUBTFXw8671bpnX6BCueHbM9WS4NZm1q")//@ngul@r@
+				//.secret(passwordEncoder().encode("@ngul@r0"))
+				.scopes("read","write")
+				.authorizedGrantTypes("password","refresh_token")
+				.accessTokenValiditySeconds(1800)
+				.refreshTokenValiditySeconds(3600*24)
+			.and()
+				.withClient("mobile")
+				.secret("$2a$10$HxWqk8PAl1iV4hRj/EA2tOUBTFXw8671bpnX6BCueHbM9WS4NZm1q")//@ngul@r@
+				//.secret(passwordEncoder().encode("@ngul@r0"))
+				.scopes("read")
+				.authorizedGrantTypes("password","refresh_token")
+				.accessTokenValiditySeconds(1800)
+				.refreshTokenValiditySeconds(3600*24);
 			
 	}
 	

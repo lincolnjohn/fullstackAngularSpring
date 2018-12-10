@@ -596,7 +596,41 @@ Módulo 6 - Segurança da API:
 
 			* $>python -m SimpleHTTPServer 8000
 
+|------------------------------------------------------------------------------------------>[10/12/2018]
+
+	Aula 6.11. Movendo o usuário para o banco de dados:
+
+		- Criando tabelas no banco de dados de usuario, permissao e usuario_permissao. Utilizando a migração do flyway.
+
+		- A senha foi encodada.
+
+		- Criou uma classe util que gera uma senha utilizando "BCryptPasswordEncoder".
+
+		- Estava dando erro no postman, referente a senha de acesso do cliente. Consultando o Apêncie Spring Boot 2 aula "Modificações para
+		o Spring Security", a senha do cliente "angular" tem que esta encondada, então usando "BCryptPasswordEncoder" coloquei a senha
+		e os testes no postman funcionaram.
+
+
+	Aula 6.12. Adicionando permissões de acesso:
+
+		- Definir escopo para aplicação, nos métodos.
+
+		- Utilizar permissão de acesso nos métodos.
+
+	
+	Aula 6.13. Desafio: Finalizando permissões de acesso:
+
+		- Implementado as ROLE de Lançamento e Pessoa.
+
+
+	Aula 6.14. Implementando o logout:
+
+		- Para implementar o logout vamos invalidar o token, já que o Oauth 2 não tem nenhum método específico para o logout.
+
+		- Removendo o refresh token do cookie.
 		
+
+
 
 
 
