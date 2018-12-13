@@ -629,6 +629,38 @@ Módulo 6 - Segurança da API:
 
 		- Removendo o refresh token do cookie.
 		
+|------------------------------------------------------------------------------------------>[12/12/2018]
+
+Módulo 7 - Deploy da API em produção :
+
+	Aula 7.1. Implementando projeção de lançamento:
+
+		- Quando fazemos uma consulta no Rest são retornadas diversas informações, podemos fazer com que o retorno seja
+		de apenas algumas informações a isso chamamos de projeção.
+
+
+
+|------------------------------------------------------------------------------------------>[13/12/2018]		
+
+	Aula 7.2. Profiles do Spring:
+
+		- Configurar propriedades para o sistema executar em diversos ambientes: Desenvolvimento, Testes, Produção...
+
+		- Quando você marca uma linha ou bloco com o comentário "// TODO:"(para fazer), a perspectiva do STS ">Show View >Task List"
+		exibe os locais onde tem essas marcações.
+
+		- Criar uma classe que vai agrupar as propriedades configuráveis perfis (profiles).
+
+		- Ele perdeu os meta-modelos tive que retorna a Aula 5.7 e refazer os comandos.
+
+
+	Aula 7.3. Criando a conta no Heroku:
+
+		- Reativa conta no Herouku.
+
+		- Instalar o Heroku CLI $>sudo snap install --classic heroku.
+
+		
 
 
 
