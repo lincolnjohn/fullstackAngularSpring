@@ -660,7 +660,31 @@ Módulo 7 - Deploy da API em produção :
 
 		- Instalar o Heroku CLI $>sudo snap install --classic heroku.
 
-		
+|------------------------------------------------------------------------------------------>[21/12/2018]
+
+	Aula 7.4. Deploy da API na nuvem:
+
+		- Depois de instalado Herouku CLI, fazer o login "$>heroku login".
+
+		- Para executar o herouku CLI "$/snap/bin> ./heroku login" abre browse para informar login e senha.
+
+		- Para criar no heroku uma pasta com aplicação /snap/bin/./heroku create algamoney-api-lincolnjohn (tem que ser um nome
+		exclusivo).
+
+		- Criar suporte ao MySql no heroku /snap/bin/./heroku addons:create jawsdb
+
+		- Consulta a URL do MySql /snap/bin/./heroku config:get JAWSDB_URL
+
+		- Parou (08)
+
+
+
+
+ 
+
+
+
+
 
 
 
