@@ -693,16 +693,57 @@ Módulo 7 - Deploy da API em produção :
 
 		- Criar um arquivo na raiz chamado "ProcFile", com informações da aplicação que vai ser usada pelo heroku.
 
-
-
+		- Foi necessário iniciar o git dentro da pasta "$>algamoney-api", para enviar o projeto ao heroku.
 
 			(parei 7:51)
+
+|------------------------------------------------------------------------------------------>[08/01/2019]
+
+	Aula 7.4. Deploy da API na nuvem (continuação) :
+
+		- Para enviar o projeto ao heroku e fazer o deploy "$>git push heroku master"
+
+		- Foi retirada a dependência do pom :
+
+			* <processor>org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor</processor>
+
+			* <artifactId>hibernate-jpamodelgen</artifactId>
+			
+		- Foi atualizada a versão do Flyway no pom.xml "<version>5.2.4</version>"
+
+		- Para verificar o log do deply "/snap/bin/./heroku logs --tail"
+
+		- Dominio do heroku "https://algamoney-api-lincolnjohn.herokuapp.com/"
+
+	Aula 7.5. Nome do usuário no token JWT : 
+	
+		- Incluir o nome do usuário no token JWT.
+
+		- Você pode customizar o token adicionando novas informações.
+
+	Aula 7.6. Alternando OAuth 2 e Basic Security com profiles:
+
+		- Utilizado para facilitar o desenvolvimento do front-end Angular.
+		
+	Aula 7.7. Desafio: Pesquisa de pessoa(finalizado) :
+	
+		- Baseado no que foi feito para Lancamentos, criar pesquisa de pessoa por nome.
+
+	Aula 7.8. Ajustando o CEP:
+	
+		- Corrigindo dados do CEP, na tabela Pessoa. Apagar o banco executar novamente a migração.
+
+	Aula 7.9. Desafio: Atualização de lançamento:
+	
+		- 
+	
+	
 
 
 	
 
 
- 
+	
 
 
 
