@@ -675,9 +675,31 @@ Módulo 7 - Deploy da API em produção :
 
 		- Consulta a URL do MySql /snap/bin/./heroku config:get JAWSDB_URL
 
-		- Parou (08)
+		- Parou (06)
+
+|------------------------------------------------------------------------------------------>[07/01/2019]
+
+	Aula 7.4. Deploy da API na nuvem (continuação) :
+
+		- Foi preciso instalar snap para depois instalar o heroku Cli:
+
+			* sudo apt install snapd
+
+			* sudo snap install --classic heroku
+
+		- A nova versão heroku cli o comando para pegar o valor da variável JAWSDB_URL:
+		
+			* /snap/bin/./heroku config:get JAWSDB_URL --app algamoney-api-lincolnjohn
+
+		- Criar um arquivo na raiz chamado "ProcFile", com informações da aplicação que vai ser usada pelo heroku.
 
 
+
+
+			(parei 7:51)
+
+
+	
 
 
  
