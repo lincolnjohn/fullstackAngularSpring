@@ -733,11 +733,162 @@ Módulo 7 - Deploy da API em produção :
 	
 		- Corrigindo dados do CEP, na tabela Pessoa. Apagar o banco executar novamente a migração.
 
-	Aula 7.9. Desafio: Atualização de lançamento:
+	Aula 7.9. Desafio: Atualização de lançamento (finalizado):
 	
+	
+Módulo 8 - Introdução ao Angular:
+
+	Aula 8.1. O que é Angular?
+
+		- Angular framework javascript para construção de front-end na web.
+
+		- Angular utiliza a linguagem TypeScript que vai ser compilada para javascript.
+
+		- Angular permite desenvolver uma SPA (single page application).
+
+		- Vamos utilizar PrimeIG uma biblioteca de componentes para Angular.
+
+	Aula 8.2. AngularJS vs Angular 2/4/X: a confusão das versões:
+
+		- AngularJS 1.x não vai mais evoluir.
+
+		- Angular 2 é outra tecnologia diferente da AngularJS.
+
+	Aula 8.3. Instalando o Visual Studio Code:
+
 		- 
+|------------------------------------------------------------------------------------------>[09/01/2019]
+
+	Aula 8.4. Introdução ao HTML:
+
+		- Html (hyper text markup language) linguagem de marcação de hipertexto.
+
+		- Tags são palavras chaves cercadas pelos sinais de maior e menor "<h1>".
+
+		- Tag de abertura "<p>" e de fechamento "</p>".
+
+		- Tags auto-fechadas "<br/>" ou "<br>".
+
+		- Atributos palavras chaves dentro das tags, que dão contexto a tag "<a href='www.google.com'>Clique aqui</a>".
+
 	
+	Aula 8.5. Introdução ao CSS:
+
+		- Css (cascading style sheet) folha de estilo em cascata.
+
+		- O estilo segue a ordem do mais específico para o menos específico.
+
+		- Atributos e seletores fonte https://developer.mozilla.org/pt-BR/ .
+
 	
+	Aula 8.6. Instalando o Node.js e NPM:
+
+		- NodeJs plataforma para construir aplicações em javascript, que rodam um servidor em tempo de desenvolvimento.
+
+		- Para instalação do NodeJs(Debian 9):
+			
+			* sudo apt install curl
+			
+			* sudo curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+			
+			* sudo apt-get install -y nodejs (já instala npm).
+
+	
+	Aula 8.7. Instalando e criando um projeto com Angular CLI:
+	
+		- Angular CLI ferramenta que automatiza a criação de projetos Angular.
+
+		- O comando $>npm cache clean (limpa o cache local do PC no caso de ter uma isntalação antiga).
+
+		- Para instalar $>sudo npm install -g @angular/cli .
+
+		- Para ver a versão $>ng version .
+
+		- Para criar um projeto $>ng new <meu projeto>.
+
+		- Para iniciar o servidor dentro do projeto $>ng serve
+
+		- O servidor por padrão sobe na pota localhost:4200, mas podemos mudar de porta $>ng serve --port 4900
+
+	
+	Aula 8.8. Abrindo o projeto no VS Code:
+
+		- O Angular CLI, cria as dependências do projeto em nível de produção e desenvolvimento.
+
+		- Na pasta "\node_modules" estão baixadas todas as dependências do projeto.
+
+	
+	Aula 8.9. Abrindo e executando um exemplo do curso:
+
+		- Quando a pasta "\node_modules" não estiver no projeto deve ser executado o comando "$>npm install", onde é 
+		criada a pasta com as dependências do projeto.
+
+
+Módulo 9 - Fundamentos do Angular, componentes e data binding:
+
+	Aula 9.1. Bootstrapping e AppModule:
+
+		- A framework injeta arquivos javascript, que vão ser utilizados na aplicação criados pelo Angular CLI.
+
+		- O componente raiz do angular na aplicação "<app-root></app-root>".
+
+		- Uma aplicação Angular é formada por módulos.
+
+		- Quando aplicação inicia é chamado o 'app.module.ts'. Onde se identifica qual o módulo inicial da aplicação.
+
+|------------------------------------------------------------------------------------------>[11/01/2019]
+
+	Aula 9.2. O que são componentes:
+
+		- Uma aplicação Angular é uma combinação de componentes.
+
+		- Os componentes podem ser reaproveitados.
+
+		- Quebrar aplicação em vários componentes depende dos objetivos deste.
+
+
+	Aula 9.3. Criando um componente:
+
+		- Você pode criar o componente de forma manual ou usando o AngularCli.
+
+		- No decorate "@Component" você define o nome da tag que vai identificar o componente através do metadados 
+		"selector:"
+
+		- Usando a crase ` `, posso fazer a concatenação de string.
+
+		- Criar um componente utilizando AngularCLI, "$>ng g c cliente --spec=false"
+
+	Aula 9.4. Instalando a biblioteca CSS do Bootstrap:
+
+		- Bootstrap é um framework para aplicações web (html,css e javascript), onde vamos utilizar apenas em alguns exemplos.
+
+		- Para instalar o bootstrap no seu projeto, "$>npm install bootstrap --save" instala a versão mais recente.
+
+	Aula 9.5. Introdução a data binding:
+
+		- Data binding vincula componente ao template e vice-versa.
+
+	Aula 9.6. Usando interpolação:
+
+		- Usamos interpolação de string para adicionar no Html algum resultado calculado por uma expressão de template ou
+		a propriedade de um componente.
+
+		- Data binding é um tipo de interpolação.
+
+		- Podemos colocar expressões typescript que podem ser convertidas em string, no html.
+
+	Aula 9.7. Usando event binding:
+
+		- (2:28)
+
+
+
+
+
+
+
+		
+
 
 
 	
