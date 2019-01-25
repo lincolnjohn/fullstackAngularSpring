@@ -881,41 +881,214 @@ Módulo 9 - Fundamentos do Angular, componentes e data binding:
 
 		- (2:28)
 
+|------------------------------------------------------------------------------------------>[14/01/2019]
 
 
+	Aula 9.7. Usando event binding(continuação):
+
+		- Preparar o Angular para reagir ações do usuário, através de eventos.
+
+		- Foi necessário reinstalar visual studio code.
+
+		- "` `" chamado de template literal, onde concatena os valores dentro da crase dupla.
+
+		- Utilizar event biding do angular "on-click".
+
+		- Você pode utilizar as formas para capturar evento de click no botão:
+
+			* on-click = "nome do método".
+
+			* (click) = "nome do método".
+
+	Aula 9.8. Usando variável de referência:
+	
+		- Você pode identificar uma tag com uma variável de referência.
 
 
+	Aula 9.9. Usando property binding:
 
+		- Utilizando propriedades das tag com referências de uma expressão typescript.
+
+		- O property binding busca do componente para o template.
+
+	Aula 9.10. Usando two-way data binding:
+
+		- Criando vinculo dos dois lados componete para o template, template para o componente two-way.
+
+
+	Aula 9.11. Introdução às diretivas:
+
+		- Diretivas são instruções usadas no Angular que podem ser:
+
+			* Componentes (adicionamos um componente no template).
+
+			* Diretivas Estruturais (modifica a estrutura do DOM documento, adicionando ou removendo elemento) .
+
+			* Diretivas de Atributos (modifica aparência do elemento).
+
+		- Podemos customizar diretivas.	
+
+|------------------------------------------------------------------------------------------>[16/01/2019]
+
+	Aula 9.12. Exibindo condicionalmente com as diretivas ngIf e hidden:
+
+		- ngIf é uma diretiva estrutural, porque altera a estrutura do DOM.
+
+		- O atributo "hidden" tem um comportamento similar ao "ngIf", entretanto ele não altera a estrutura do DOM apenas
+		oculta a informação.
+
+		- O "hidem" tem um desempenho no processamento melhor que o "ngIf". A opção em usar um ou outro depende das características do 
+		aplicativo que se está desenvolvendo.
+
+
+	Aula 9.13. Iterando com a diretiva ngFor:
+	
+		- Vamos usar um componente do Bootstrap "Card" https://getbootstrap.com/docs/4.0/components/card/.
+
+		- Utilizar um site que fornece fotos aleatórias https://randomuser.me/api/portraits/lego/1.jpg
+
+		- A diretiva "ngFor" faz um iteração um loop.
+
+		- Estava dando problema na hora de salvar arquivo(Vscode) , o encode UTF-8 estva sendo perdido. Uma dica da internet falou
+		que a barra inferior mostra o encode estava errado troquei para UTF-8 funcionou.
+
+
+|------------------------------------------------------------------------------------------>[17/01/2019]
+
+	Aula 9.14. Binding de propriedades customizadas com @Input:
+
+		- O comando "$>ng g c funcionario-card", cria um componente.
+
+		- Para expor uma propriedade para fora do componente usamos "@Input()".
+
+		- Podemos criar componentes que podem ser reutilizados.
+
+
+	Aula 9.15. Binding de eventos customizados com @Output e EventEmitter:
+
+		- Para expor um evento para fora do componente usamos "@Output()".
+
+		- Na comunicação entre componentes fazemos um binding de eventos, que chama um método, ou bindig de propriedades. 
+
+
+	Aula 9.16. Adicionando estilos CSS em componentes:
+
+		- Você pode personalizar o estilos CSS para os componentes.
+
+
+|------------------------------------------------------------------------------------------>[18/01/2019]		
+
+
+	Aula 9.17. Estilos CSS dinâmicos com ngStyle:
+
+		- Adicionar estilo css de forma dinâmica utilizando diretiva ngStyle.
+
+		- Uma diretiva pode alterar o comportamento ou aparência de um componente ou elemento.
+
+
+	Aula 9.18. Classes CSS dinâmicas com ngClass:
+
+		- As diretivas podem trabalhar em conjunto com as propriedades do Html.
+
+
+Módulo 10 - Páginas de pesquisas:
+
+
+	Aula 10.1. Instalando plugins úteis no Visual Studio Code:
+
+		- Quando criamos o projeto pelo Angular CLI, é instalado uma ferramenta para analisar o nosso código, informando
+		problemas de sintaxe, boas práticas e legibilidade (tslint).
+
+		- Executar o comando "$>/projetoteste/node_modules/tslint/bin/"
 
 		
+|------------------------------------------------------------------------------------------>[21/01/2019]
+
+	Aula 10.2. Escolhendo uma biblioteca de componentes:
+
+		- Bibliotecas de componentes para Angular:
+
+			* https://material.angular.io/
+
+			* https://www.primefaces.org/primeng/#/
+
+			* http://angular2-materialize.surge.sh/#/Buttons
+
+			* https://ng-bootstrap.github.io/
 
 
+	Aula 10.3. Criando o projeto do curso e instalando o PrimeNG:
 
+		- Executar o comando "$>ng new algamoney-ui" para iniciar o projeto no AngularCLI.
+
+		- Instalar a biblioteca de componentes do PrimeNG no projeto "$>npm install primeng --save".
+
+		- Instalar uma dependência do primeng para icones "fontawesome.io" "$>npm install fontawesome --save"
+
+		- Acresentar na configuração do projeto as fontes css do primeng e fontawesome, quando empacotar o mesmo:
+
+		 	"styles": [
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/primeng/resources/themes/nova-light/theme.css",
+              "./node_modules/primeng/resources/primeng.min.css",
+              "src/styles.css"
+            ],
+
+		- Desintalar um componente "$>npm uninstall fontawesome --save".
+
+
+	Aula 10.4. Adicionando o formulário de pesquisa de lançamentos:
 	
+		- Para permitir que o sistema fique responsivo, temos que trabalhar com Grid CSS.
 
-
+|------------------------------------------------------------------------------------------>[23/01/2019]		   
 	
+	Aula 10.5. Adicionando uma tabela de dados:
+
+		- A versão nova PrimeNG não utiliza o componente "p-dataTable" que foi substituido por "p-Table", que foi utilizado
+		no exemplo.
+
+		- O estilo que foi aplicado também ficou diferente:
+
+			* @Component({
+				  selector: 'app-root',
+				  templateUrl: './app.component.html',
+				  styleUrls: ['./app.component.css'],
+				  styles:[`
+				  .col-data-header{
+				    width:120px;
+				    text-align: center;
+				  }
+
+				  .col-data{
+				    width: 120px;
+				    text-align: center;
+				  }
+
+				  .col-valor-header{
+				    width:120px;
+				    text-align: center;
+				  }
+
+				  .col-valor{
+				    width: 120px;
+				    text-align: right;
+				  }
+				`]
+				})
+
+			* <th [ngClass]="{'col-data':true}" >Vencimento</th>
+
+			* <td [ngClass]="{'col-data':true}"  >{{lancamento.dataVencimento}}</td>
 
 
+	Aula 10.6. Customizando colunas com ng-template:
 
+		- Como estou utilizando uma versão mais nova PrimeNG, tive que fazer adaptações no código.
 
+		
+		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-	
 
 
 
