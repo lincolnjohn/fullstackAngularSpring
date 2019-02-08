@@ -746,7 +746,7 @@ Módulo 8 - Introdução ao Angular:
 
 		- Angular permite desenvolver uma SPA (single page application).
 
-		- Vamos utilizar PrimeIG uma biblioteca de componentes para Angular.
+		- Vamos utilizar PrimeNG uma biblioteca de componentes para Angular.
 
 	Aula 8.2. AngularJS vs Angular 2/4/X: a confusão das versões:
 
@@ -1087,7 +1087,199 @@ Módulo 10 - Páginas de pesquisas:
 		- Como estou utilizando uma versão mais nova PrimeNG, tive que fazer adaptações no código.
 
 		
-		
+|------------------------------------------------------------------------------------------>[28/01/2019]
+
+	Aula 10.7. Fazendo paginação de dados:
+
+		- Adicionar recurso de paginação em uma datatable do primeng.
+
+		- Adicionar a biblioteca de icones primeicons.css:
+
+			1. Execute o comando: npm install primeicons --save
+
+			2. Navegue até o seu aquivo angular.json e dentro de styles adicione a referência do primeicons. Desta forma:
+
+			 "styles": [
+			 "node_modules/primeicons/primeicons.css",
+			 "src/styles.css"
+			 ],
+
+	Aula 10.8. Adicionando tooltip:
+
+		- Diretiva que permite acrescentar informações adicionais nos campos de dados.
+
+		- Os componetes do PrimeNG precisam ser importados em "app.module.ts" .
+
+
+	Aula 10.9. Colocando a tabela de dados responsiva:
+
+		- Permitindo aplicação ser e utilizada em diversos dispositivos com resolução diferente.
+
+	
+	Aula 10.10. Criando o componente de pesquisa de lançamentos:
+	
+		- Para criar um componente pelo AngularCli, "$>ng g c lancamentos-pesquisa" .
+
+|------------------------------------------------------------------------------------------>[29/01/2019]
+
+	Aula 10.11. Criando o componente de barra de navegação:
+
+		- Criar um componente de barra de navegação, no terminal digita o comando "$>ng g c navbar --spec=false" .
+
+
+	Aula 10.12. Adicionando menu intercambiável:
+
+		- Criando estilo css para componente de menu.
+
+	Aula 10.13. Desafio: criando componente de pesquisa de pessoas:
+	
+		- Desafio OK
+	
+|------------------------------------------------------------------------------------------>[31/01/2019]
+
+
+Módulo 11 Diretivas e pipes 
+
+
+	Aula 11.1. Criando diretivas customizadas:
+
+		- Usar o projeto de teste usado no inicio do curso.
+
+		- Usar o comando $>ng g d campo-colorido --spec=false (gera uma diretiva chamada campo-colorido).
+
+		- Construir uma diretiva para mudar o estilo de um campo.
+
+
+	Aula 11.2. Respondendo a eventos do hospedeiro com @HostListener:
+
+		- Acionar a diretiva quando existir algum evento, elemento receber o foco.
+
+		- O aplicativo vai ficar escutando um evento, com o decorator "@HostListener ('evento do DOM')" identificamos
+		o evento com a diretiva.
+
+		- Podemos criar diretivas que podem ser reaproveitadas na aplicação toda.
+
+
+	Aula 11.3. Vinculando propriedades do hospedeiro com @HostBinding:
+
+		- Podemos utilizar de outra maneira a diretiva, não utilizando o "Renderer2".
+
+		- Utilizando o decorator "@HostBinding('propriedade DOM')" vinculando a diretiva ao valor de uma variável.
+
+
+	Aula 11.4. Usando property binding em diretivas customizadas:
+
+		- Defino uma propriedade da diretiva, que eu informo o valor na construção da minha interface.
+
+
+	Aula 11.5. Exportando a API da diretiva para o template:
+
+		- Permite você expor a diretiva para ser usada em outras partes da aplicação.
+
+
+|------------------------------------------------------------------------------------------>[04/02/2019]
+
+	Aula 11.6. Conhecendo e usando pipes:
+
+		- Pipe é uma funcionalidade que pega um valor de entrada e gera um valor de saída, formatado.
+
+		- Um pipe nativo já vem com Angular.
+
+		- Exemplos de pipes nativos:
+
+			* {{variável | uppercase}} (transforma para maíuscula)
+
+			* {{variável | date}} (transforma para data)
+
+			* {{variável | number}} (transforma para número)
+
+			* {{variável | currency}} (transforma para moeda)
+
+
+	Aula 11.7. Passando parâmetros para pipes:
+
+		- Site do Angular (https://angular.io/api?query=pipe) informa sobre os tipos de pipes e parâmetros que podem ser usados.
+
+		- Exemplo : {{variável | date: 'dd/MM/y'}} (transforma para data com os parâmetros de formatação).
+
+		- Pode ser utilizado a concatenação de pipes.
+
+
+	Aula 11.8. Desafio - usando pipes:
+
+		- No projeto do curso utilizar pipe para formatar as datas no lançamento pesquisa.
+
+
+
+Módulo 12 Formulários e validação
+
+	
+	Aula 12.1. Introdução aos formulários:
+
+		- A maioria das vezes os sistemas possuem vários formulários.
+
+		- Formulário (action e method) envia dados  --> Servidor (recebe url ou no corpo da request), maneira tradicional.
+
+		- Em angular o formulário representa um objeto javascript com varias propriedades, uma delas é 
+		value com a estrutura (chave ,valor).
+
+		- O formulário do angular idepende do servidor que vai receber este objeto.
+
+		- No formulário deve existir a validação dos dados.
+
+		- Formas de trabalhar com formulários Template-Driven Forms ou Reactive Froms (model-driven).
+
+
+	Aula 12.2. Template-driven Forms: Criando um formulário;
+	
+		- Criar um projeto formulario $>ng new formulario.
+
+		- Instalar o bootstrap no projeto $>npm install bootstrap --save
+
+|------------------------------------------------------------------------------------------>[08/02/2019]
+
+	Aula 12.3. Registrando os controles do formulário:
+
+		- Utilizando a diretiva ngModel vinculando com o campo input do formulário.
+
+		- Preciso definir a propriedade name que vincula o campo ao formulário.
+
+
+	Aula 12.4. Adicionando opções dinâmicas no campo de seleção:
+
+		-  Na tag select o valor pode vir de um objeto definido no componente.
+
+
+	Aula 12.5. Definindo o valor padrão em campos com ngModel:
+
+		- Alterações feitas no componente são refletidas no template(one way biding).
+
+
+	Aula 12.6. Two-way binding com ngModel:
+
+		- 
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
 
 
 
