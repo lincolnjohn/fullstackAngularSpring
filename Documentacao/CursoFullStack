@@ -1257,9 +1257,110 @@ Módulo 12 Formulários e validação
 
 	Aula 12.6. Two-way binding com ngModel:
 
-		- 
+		- Alterações feitas no componente são refletidas no template e vice versa, componente ->template e template -> componente.
+	
+|------------------------------------------------------------------------------------------>[11/02/2019]
+
+	Aula 12.7. Adicionando validação em formulários:
+
+		- Primeiro podemos adicionar o atributo do html "required", que valida se o campo foi preenchido ou não.
+
+		- Existe uma propriedade do formulário "valid" que identifica se o campo está valido ou não.
+
+		- A validação no lado cliente melhora a experiência do usuário com o sistema. Mas é uma validação fraca.
+
+		- Podemos desabilitar o botão que submete o formulário se ele não estiver valido.
+
+		- O Angular já possui um conjunto de validadores.
+
+
+	Aula 12.8. Exibindo erro de validação do formulário	:
+
+		- Existe a propriedade do ngForm "invalid" tem valor contrário ao "valid".
+
+		- Para desabilitar o autcomplete no html colocamos como "off".
+
+
+	Aula 12.9. Exibindo erro de validação de controles do formulário:
+
+		- Colocar o controle de validação em cada campo do formulário.
+
+		- Para identificar a variável no campo do formulário, eu crio a variável de referência e instâncio com "ngModel".
+
+
+	Aula 12.10. Rastreando o estado em controles do formulário:
+
+		- Propriedades que permitem identificar se o campo foi tocado (touched) ou alterado (dirty).
+
+
+|------------------------------------------------------------------------------------------>[18/02/2019]		
+
+	Aula 12.11. Estilizando os campos inválidos com classes CSS do Angular:
+
+		- Aplicar um estilo aos campos do componentes de acordo com a classe que o Angular designa.
+
+		- Você pode conbinar várias classes Css é um componente.
+
+
+	Aula 12.12. Estilizando os campos inválidos com Bootstrap:
+
+		- Colocar classes do bootstrap com estilo.
+
+		- Na aula é utilizado "has-danger" mas no bootstrap 4 substituir por "was-validated".
+
+		- Na aula é utilizado class="form-control-feedback" mas no bootstrap 4 substituir por class="invalid-feedback" 
+
+
+	Aula 12.13. Limpando formulários (reset):
+
+		- Quando na página coloco a informação {{client | json}}, funciona com um debug para verificar o valor.
+
+		- Usando "form.reset()", limpa os campos do formulários e os estados destes.
+
+
 	
 
+Módulo 13 - Páginas de cadastro
+
+
+	Aula 13.1. Criando o protótipo do formulário de cadastro de lançamentos:
+
+		- Na pasta do projeto executar o comando para criar o componente lançamentos:
+
+			* "$>ng g c lancamento-cadastro --spec=flase"
+
+		- Na informação de grid da class, quando informo "ui-md-3" significa que em uma tela média ou superior ocupar 3 colunas. 	
+
+
+|------------------------------------------------------------------------------------------>[20/02/2019]
+
+	Aula 13.2. Adicionando seletor de data (componente Calendar):
+
+		- Importa o componente "CalendarModule" do primeng, para ser utilizado no campo de data.
+
+		- É preciso importar a dependência "BrowserAnimationsModule".
+
+		- Utilizar a propriedade dateFormat="dd/mm/yy" para formatar a data no padrão Brasileiro.
+
+
+	Aula 13.3. Adicionando botão de seleção:
+
+		- Utilizar do PrimeNg o componente "<p-selectButton>".
+
+		- Mudança dinâmica do label de acordo com a seleção do botão.
+
+
+	Aula 13.4. Adicionando caixa de seleção (componente Dropdown):
+	
+		- Como estamos fazendo primeiro o protótipo vamos colocar valores fixos para categorias e pessoas.
+
+		- Você pode modificar o estilo dos componentes do PrimeNg, identificando este e modificando no 
+		arquivo css.
+		
+	
+
+
+ 
 
 
 
