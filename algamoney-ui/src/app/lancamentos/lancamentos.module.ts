@@ -1,7 +1,6 @@
-import { LancamentosModule } from './lancamentos/lancamentos.module';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { InputTextModule } from 'primeng/components/inputtext/inputtext';
 import { InputTextareaModule } from 'primeng/components/inputtextarea/inputtextarea';
@@ -15,35 +14,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SelectButtonModule } from 'primeng/components/selectbutton/selectbutton';
 import { DropdownModule } from 'primeng/components/dropdown/dropdown';
 import { InputMaskModule } from 'primeng/components/inputmask/inputmask';
-
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { from } from 'rxjs';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
-import { MessageComponent } from './message/message.component';
-import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
+import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
+import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    PessoasPesquisaComponent,
-    PessoaCadastroComponent,
-    MessageComponent,
-    PessoasGridComponent
-  ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
+    CommonModule,
     FormsModule,
-
-    LancamentosModule,
+    BrowserAnimationsModule,
 
     InputTextModule,
     ButtonModule,
@@ -58,7 +40,14 @@ import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
     CurrencyMaskModule,
     InputMaskModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    LancamentoCadastroComponent,
+    LancamentosPesquisaComponent,
+    LancamentosGridComponent
+  ],
+  exports: [
+    LancamentoCadastroComponent,
+    LancamentosPesquisaComponent
+  ]
 })
-export class AppModule { }
+export class LancamentosModule { }

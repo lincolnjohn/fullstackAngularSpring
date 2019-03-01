@@ -1327,7 +1327,7 @@ Módulo 13 - Páginas de cadastro
 
 		- Na pasta do projeto executar o comando para criar o componente lançamentos:
 
-			* "$>ng g c lancamento-cadastro --spec=flase"
+			* "$>ng g c lancamento-cadastro --spec=false"
 
 		- Na informação de grid da class, quando informo "ui-md-3" significa que em uma tela média ou superior ocupar 3 colunas. 	
 
@@ -1358,6 +1358,145 @@ Módulo 13 - Páginas de cadastro
 		arquivo css.
 		
 	
+|------------------------------------------------------------------------------------------>[25/02/2019]
+
+	Aula 13.5. Adicionando máscara de dinheiro com ng2-mask-money:
+
+		- Para formatar campo de input com máscara monetária utilizar o componente ng2-currency-mask.
+
+		- Para instalar "$>npm install ng2-currency-mask --save" vai adicionar a dependência no "package.json".
+
+		- Adicionar os parâmetros para formatar o campo no padrão brasileiro:
+
+				* [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+
+
+	Aula 13.6. Desafio: criando o protótipo do formulário de cadastro de pessoa:
+
+		- Na pasta do projeto executar o comando para criar o componente cadastro de pessoa.
+
+			* "$>ng g c pessoa-cadastro --spec=false".
+
+		- Seguir o mesmo exemplo feito para lançamento.	
+
+
+	Aula 13.7. Adicionando campo com máscara (componente InputMask):
+
+		- Vamos utilizar no campo de CEP.
+
+	
+	Aula 13.8. Validando controles de formulário com PrimeNG:
+
+		- A propriedade "{{descricao.errors | json}}" exibe se o campo está inválido.
+
+
+	Aula 13.9. Criando componente de mensagem de erro de validação:
+
+		- Criar o componente sem template e css:
+
+			* "$>ng g c message --spec=false --inline-template --inline-style"
+		
+		- Adicionando estilo ao componente:
+
+			*  styles: [`
+			    .ui-messages-error {
+			      background-color: red;
+			      color: white;
+			      font-weight: bold;
+			      margin: 0;
+			      margin-top: 5px;
+			    }
+			  `]
+
+|------------------------------------------------------------------------------------------>[28/02/2019]
+
+	Aula 13.10. Desafio: controles, validações e mensagens de erro:
+
+		- Adicionar o NgModel, validadores e mensagem em cadastro de pessoa e lançamentos.
+
+		- Feito
+
+
+	Aula 13.11. Desafio: criando mais componentes
+
+		- Criar um componente de vai substituir a tabela dos lançamentos na página de pesquisa lançamentos.
+	 
+	 	- Criar um componente de vai substituir a tabela das lançamentos na página de pesquisa pessoas.
+
+	 	- Feito
+
+
+Módulos 14 - Módulos do Angular:
+
+
+	Aula 14.1. Introdução aos módulos:
+
+		- Toda aplicação Angular tem um módulo raiz que geralmente é chamado appmodule.
+
+		- Criar módulos para organizar o projeto. Cada módulo agrega componentes, diretivas e pipe.
+
+		- Um módulo deve declarar que possui componentes, diretivas e pipe.
+
+		- Componentes que não forem exportados somente podem ser utilizados apenas pelo próprio módulo.
+
+
+	Aula 14.2. Criando um módulo e exportando um componente	:
+
+		- Para criar um módulo usando AngularCLI "$>ng g m botoes"
+
+		- Criar um componente dentro do módulo criado "$>ng g c botoes/botao-grande"
+
+
+|------------------------------------------------------------------------------------------>[01/03/2019]
+
+
+	Aula 14.3. Reexportando um módulo:
+
+		- O AppModule importa o módulo do componente e este exporta o seu componente.
+
+		- Um módulo pode importar outro módulo.
+
+
+	Aula 14.4. Criando um componente interno do módulo:
+
+		- Um componente encapsulado só pode ser usado dentro do módulo.
+
+
+	Aula 14.5. O que são Feature Modules (módulos de funcionalidades) ?
+
+		- As aplicações geralmente possuem conjunto de funcionalidades.
+
+		- AppModule(MessageComponent, NavbarComponent, AppComponent): 
+
+			* Pessoas(PessoaCadastroComponent, PessoaGridComponent, PessoaPesquisaComponent) 
+
+			* Lançamentos(LancamentosPessoaCadastroComponent, LancamentosGridComponent, LancamentosPesquisaComponent)
+
+
+	Aula 14.6. Criando um Feature Module:
+
+		- Criar o módulo lancamentos "$>ng g m lancamentos" que cria um pasta "\lancamentos", mover os componentes de lançamentos
+		para a pasta, ajustar as importações no "lancamentos.module.ts".
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
