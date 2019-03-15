@@ -1479,6 +1479,151 @@ Módulos 14 - Módulos do Angular:
 		para a pasta, ajustar as importações no "lancamentos.module.ts".
 
 		
+|------------------------------------------------------------------------------------------>[07/03/2019]
+
+	Aula 14.7. Desafio: criando o feature module de pessoas [ok] :
+
+		- Criar o módulo pessoas "$>ng g m pessoas" que cria um pasta "\pessoas", mover os componentes de pessoas
+		para a pasta, ajustar as importações no "pessoas.module.ts".
+
+	Aula 14.8. O que são Shared Modules?
+
+		- Um componente compartilhado entre outros componentes.
+
+		- SharedModule um módulo compartilhado.
+
+
+	Aula 14.9. Criando um Shared Module:
+
+		- Criar o modulo "$>ng g m shared".
+
+		- Importar o "ShareModule" nos componentes Lançamentos e Pessoas.
+
+
+	Aula 14.10. O que é Core Module?
+
+		- Componentes que são utilizados apenas pelo "AppComponent", devem ser definidos em um "CoreModule".
+
+
+	Aula 14.11. Desafio: criando o Core Module [ok]:
+
+		- Criar o módulo "core"	"$>ng g m core".
+
+		- Mover o componente "navbar" para o "core".
+
+		- Declarar o "navbar" no módulo "core".
+
+		- Retirar a referência "NavbarComponent" do app.module.ts e importar o "CoreModule".
+
+
+
+Módulo 15 - Serviços e injeção de dependências:
+
+	
+	Aula 15.1. Introdução aos serviços:
+
+		- Quando uma funcionalidade precisa ser disponibilizadas para vários componentes ou módulos.
+
+		- Um serviço tem como foco as regras da aplicação.
+
+		- Evita duplicação de código, reaproveitamento e melhora a manutenção.
+
+|------------------------------------------------------------------------------------------>[11/03/2019]
+
+	Aula 15.2. Implementando um serviço: 
+
+		- Utilizar um exemplo para entender sobre serviço.
+
+		- No exemplo "projetoteste", implementar em "funcionario-form" a chamada de um serviço.
+
+		- Regras do negócio não devem ser colocados no componente e sim em uma classe service, pois a principal responsabilidade
+		do componente é controlar a view ( interface com usuário).
+
+
+	Aula 15.3. O que é injeção de dependências?	
+
+		- DI (dependency injection) um padrão de projeto implementado pelo Angular.
+
+		- Com um dos objetivos de diminuir a quantidade de informações, que um componente precisa saber sobre sua dependência.
+
+		- É preciso prover a classe que eu quero injetar, através do "providers:[]" no "app.module.ts".
+
+		obs: O VScode estava exibindo um warning nas classe Type Script, solução: In VSCode, Go to File => Preferences => Settings (or
+		Control+comma) and it will open the User Settings file. Add "javascript.implicitProjectConfig.experimentalDecorators": true to 
+		the file and it should fix it. It did for me.
+
+
+	Aula 15.4. Configurando o injetor com provider por classe:
+
+		- Posso prover outra classe que extende FuncionarioService.
+
+		- Apenas com mudança de configuração consigo alterar o comportamento do sistema, sem a necessidade de alterar o que já foi
+		implementado. Tenho um ganho com a flexibilização deste.
+
+		- Uma implementação mais flexível me permiter modificar o sistema sem impactar nas classes já testadas e em produção. Sendo
+		necessário apenas testar as novas classes.
+
+
+|------------------------------------------------------------------------------------------>[14/03/2019]
+
+	
+	Aula 15.5. Configurando o injetor com provider por fábrica:
+
+		- Cria um método que vai referênciar um provider por fábrica.
+
+
+	Aula 15.6. Configurando o injetor com provider por valor e o decorator @Inject:
+
+	
+	Aula 15.7. Injetando serviços dentro de serviços e o decorador @Injectable:
+
+	
+
+|------------------------------------------------------------------------------------------>[15/03/2019]
+
+
+	Aula 15.7. Injetando serviços dentro de serviços e o decorador @Injectable:
+
+		- Através do construtor de um serviço injetar outro serviço.
+
+		- Uma classe para utilizar injeção de dependência precisa ter o decorate "@Injectable" definido nela.
+
+		- O decorate "@Injectable", pode ser colocado em todas as classes de serviço por padrão.
+
+
+	Aula 15.8. Como funciona o Injetor Hierárquico:
+
+		- O injetor do Angular retorna um Sigleton (uma mesma instância para todos).
+
+		- Vai exitir um Injetor raiz e Injetor filho.
+
+		- Quando injetamos um provedor no componente ele também é utilizado pelos filhos do componente.
+
+
+Módulo 16 - Requisições HTTP:
+
+
+	Aula 16.1. Por que precisamos de requisições HTTP?
+
+		- SPA (aplicações com uma única página) se comunicam com Back-end um servidor HTTP (fornce uma API REST).
+
+
+	Aula 16.2. Instalando e testando o json-server:
+
+		- O json-server simula um Back-end para testar as requsições REST. É uma API REST fake, usada para testes.
+
+		- Site https://github.com/typicode/json-server
+
+		- Instalação "$>npm install -g json-server"
+
+		- Para iniciar API REST fake "$>json-server --watch data/db.json"
+
+		- Utilizar o PostMan para realizar as requisições API REST. 
+
+
+	Aula 16.3. Fazendo requisição com GET e recebendo o retorno:
+
+		- 
 
 
 
@@ -1486,40 +1631,10 @@ Módulos 14 - Módulos do Angular:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
 	
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-
-
-
 
 
 
