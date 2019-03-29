@@ -82,7 +82,15 @@
 		<item value="org.eclipse.wst.xml_ui.feature:3.11.0.v201807252207"/>
 		<item value="org.eclipse.wst.xsl.feature:1.3.500.v201805022145"/>
 		<item value="org.eclipse.zest:1.7.0.201606061308"/>
+		<item value="org.jboss.ide.eclipse.archives.feature:3.6.201.v20180807-1806"/>
+		<item value="org.jboss.ide.eclipse.as.archives.integration.feature:3.6.1.v20180926-1902"/>
+		<item value="org.jboss.ide.eclipse.as.feature:3.6.1.v20180926-1902"/>
+		<item value="org.jboss.ide.eclipse.as.jmx.integration.feature:3.6.1.v20180926-1902"/>
+		<item value="org.jboss.ide.eclipse.as.server.rse.integration.feature:3.6.1.v20180905-1611"/>
+		<item value="org.jboss.tools.jmx.feature:1.10.5.v20180807-1806"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
+		<item value="org.jboss.tools.runtime.core.feature:3.4.4.v20180802-1505"/>
+		<item value="org.jboss.tools.stacks.core.feature:1.4.101.v20180802-1505"/>
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
 		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.2.201606141937-signed-20160830073346"/>
@@ -105,6 +113,13 @@
 		<item value="org.springsource.sts.package:3.9.6.201809180749-RELEASE-e49"/>
 		<item value="org.springsource.sts:3.9.6.201809180749-RELEASE"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item value="490" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="407" key="DIALOG_HEIGHT"/>
+		<item value="558" key="DIALOG_X_ORIGIN"/>
+		<item value="174" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
@@ -112,5 +127,19 @@
 	<section name="ChooseWorkspaceDialogSettings">
 		<item value="397" key="DIALOG_X_ORIGIN"/>
 		<item value="227" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/algamoney-api/src/main/java/br/algamoneyapi/resource/TokenResource.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/algamoney-api/src/main/java/br/algamoneyapi/token/RefreshTokenPostProcessor.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Sans|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="503" key="DIALOG_X_ORIGIN"/>
+			<item value="81" key="DIALOG_Y_ORIGIN"/>
+		</section>
 	</section>
 </section>

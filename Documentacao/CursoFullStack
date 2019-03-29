@@ -1623,10 +1623,112 @@ Módulo 16 - Requisições HTTP:
 
 	Aula 16.3. Fazendo requisição com GET e recebendo o retorno:
 
-		- 
+		- Criar um service de cidades, que vai responder um get com retorno de um método.
+
+
+|------------------------------------------------------------------------------------------>[19/03/2019]
+
+	
+	Aula 16.4. Fazendo requisição com POST:
+
+		- Utilizado para inserir dado.
+
+
+	Aula 16.5. Fazendo requisição com DELETE:
+
+		- Utilizado para excluir dado.
+
+
+	Aula 16.6. Fazendo requisição com PUT:
+
+		- Utilizado para alterar dado.
+	
+
+	Aula 16.7. Tratando erros de requisições HTTP:
+
+		- Captura erro do método ".catch(erro => {.... return Promise.reject(`Erro ao alterar cidade `) })".
+
+		- Simular algum erro para utilizar o tratamento.
 
 
 
+Módulo 17 -Implementando os serviços do projeto:
+
+	
+	Aula 17.1. Revisando e iniciando o back-end do projeto do curso:
+
+		- Integração com o Back-end do projeto. 
+
+
+|------------------------------------------------------------------------------------------>[25/03/2019]
+
+		- Gerar novamente o jar:
+
+			# Como aplicação estava apontando para produção no heroku, precisa comentar dois parâmetros do application-prod.properties
+			que habilitam o https para true e a url do heroku.
+
+			# Caso queria pular estes testes e simplesmente gerar o JAR, selecione Run As > Maven Build… (com os três pontos no fim)
+			Você ira ter uma nova tela. No campo com o nome Goals, coloque o seguinte comando: clean install -DskipTests
+
+			# Como temos arquivos de migração do flyway é necessário apagar as tabelas para serem geradas novamente.
+
+			# O arquivo é gerado em "/home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/
+			algamoney-api/target/algamoney-api-1.0.0-SNAPSHOT.jar".
+
+			# Executar o jar gerado "$>java -jar algamoney-api-1.0.0-SNAPSHOT.jar --spring.datasource.username=root
+			--spring.datasource.password=admin --spring.profiles.active=basic-security"
+
+			# Para testar no Postman:
+
+				- No Authorization type: No Auth
+				- Headers key: Authorization Basic (encode do usuário:senha)
+				- Site para encode64 https://www.base64encode.org/
+
+		- Verificar Aula 7.2. Profiles do Spring, para configura ambiente de produção ou desenvolvimento.
+
+
+
+|------------------------------------------------------------------------------------------>[26/03/2019]
+
+	Aula 17.2. Criando o serviço de consulta de lançamentos:
+
+		- Vamos implementar o serviço utilizando a API já desenvolvida, usando uma chamada Http.
+
+		- Criar uma classe de serviço "$>ng g s lancamentos/lancamento --spec=false".
+
+		- Uando HttpClient pela versão do Angular 6.
+
+		- Quando do levantamento do servidor back-end é necessário informar o parâmetro para ele permitir acesso apartir do front-end
+		Angular "$>java -jar algamoney-api-1.0.0-SNAPSHOT.jar --spring.datasource.username=root --spring.datasource.password=admin		--spring.profiles.active=basic-security --algamoney.origin-permitida=http://localhost:4200".
+
+
+|------------------------------------------------------------------------------------------>[29/03/2019]
+
+	Aula 17.3. Adicionando filtro por descrição na pesquisa de lançamentos:
+	
+		- Retirar o componente lancamento-grid.component é colocar o código direto na página lancamento-pesquisa.component.
+
+		- O método pesquisar ficou diferente devido nova versão do angular:
+
+			 pesquisar(filtro: LancamentoFiltro): Promise<any> {
+
+    		const params = filtro.descricao ? new HttpParams().set('descricao', filtro.descricao) : { }
+
+			    const headers = new HttpHeaders().set('Authorization', 'Basic YWRtaW5AYWxnYW1vbmV5LmNvbTphZG1pbg==');
+
+			    return this.http.get(`${this.lacamentosUrl}?resumo`,  {headers, params} )
+			      .toPromise();
+			      /*.then(response => {
+			        console.log(response);
+
+			      });*/
+			  }
+
+
+
+
+
+	
 
 
 

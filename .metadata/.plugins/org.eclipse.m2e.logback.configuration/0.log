@@ -248,3 +248,220 @@
 2018-11-12 19:55:49,665 [Worker-72: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/algamoney-api/src/test/resources
 2018-12-06 11:49:51,437 [Worker-6: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2018-12-06 11:51:05,493 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-25 11:48:04,521 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-03-25 11:48:31,606 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.thot.algamoney-api:algamoney-api:1.0.0-SNAPSHOT @ /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/pom.xml.
+2019-03-25 11:48:33,831 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4.pom
+2019-03-25 11:48:33,925 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4.pom
+2019-03-25 11:48:34,024 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/5.2.4/flyway-parent-5.2.4.pom
+2019-03-25 11:48:34,221 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/5.2.4/flyway-parent-5.2.4.pom
+2019-03-25 11:48:34,959 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4.jar
+2019-03-25 11:48:35,474 [Worker-2: Updating Maven Dependencies] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4.jar
+2019-03-25 11:48:39,514 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4-sources.jar
+2019-03-25 11:48:40,047 [Worker-8: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.thot.algamoney-api:algamoney-api:1.0.0-SNAPSHOT @ /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/pom.xml.
+2019-03-25 11:48:40,061 [Worker-4: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/flywaydb/flyway-core/5.2.4/flyway-core-5.2.4-sources.jar
+2019-03-25 11:48:40,157 [Worker-4: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.flywaydb:flyway-core:5.2.4
+2019-03-25 11:48:40,853 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:48:40,939 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:40,942 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-03-25 11:48:40,962 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2019-03-25 11:48:40,976 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:40,976 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:48:42,164 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:48:42,166 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:42,167 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 11:48:42,167 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 11:48:42,169 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:42,169 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:48:49,696 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:48:49,700 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:49,700 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 11:48:49,700 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 11:48:49,703 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:49,703 [Worker-8: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:48:57,429 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:48:57,430 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:57,431 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-03-25 11:48:57,432 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2019-03-25 11:48:57,434 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:48:57,434 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:49:15,485 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:49:15,487 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:49:15,489 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 11:49:15,514 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 11:49:15,543 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:49:15,543 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:49:40,269 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-03-25 11:49:40,550 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.thot.algamoney-api:algamoney-api:1.0.0-SNAPSHOT @ /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/pom.xml.
+2019-03-25 11:49:40,774 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:49:40,813 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /algamoney-api/src/main/java
+2019-03-25 11:49:40,813 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /algamoney-api/target/generated-sources/annotations
+2019-03-25 11:49:40,814 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /algamoney-api/src/main/resources
+2019-03-25 11:49:40,814 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /algamoney-api/src/main/resources
+2019-03-25 11:49:40,814 [Worker-14: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /algamoney-api/src/test/java
+2019-03-25 11:49:41,386 [Worker-14: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2019-03-25 11:49:42,549 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:49:42,559 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:49:42,560 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 11:49:42,573 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 11:49:42,577 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:49:42,577 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:53:26,634 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:53:26,636 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:53:26,637 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 11:53:26,638 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 11:53:26,642 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:53:26,642 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:53:46,322 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 11:53:46,324 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:53:46,325 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 11:53:46,326 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 11:53:46,327 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 11:53:46,328 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 11:57:47,745 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2019-03-25 11:58:53,190 [Worker-21: Launching algamoney-api] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api
+2019-03-25 11:58:53,190 [Worker-21: Launching algamoney-api] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install -DskipTests
+2019-03-25 12:10:15,666 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 12:10:15,685 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 12:10:15,685 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 12:10:15,686 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 12:10:15,688 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 12:10:15,688 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 12:13:43,155 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2019-03-25 12:13:43,205 [Worker-25: Launching algamoney-api] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api
+2019-03-25 12:13:43,205 [Worker-25: Launching algamoney-api] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install -DskipTests
+2019-03-25 12:14:33,771 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1/org.eclipse.m2e.workspace.cli-0.3.1-sources.jar
+2019-03-25 12:14:33,868 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/takari/m2e/workspace/org.eclipse.m2e.workspace.cli/0.3.1/org.eclipse.m2e.workspace.cli-0.3.1-sources.jar
+2019-03-25 12:14:34,519 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2-sources.jar
+2019-03-25 12:14:34,804 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2-sources.jar
+2019-03-25 12:14:35,358 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1-sources.jar
+2019-03-25 12:14:35,758 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1-sources.jar
+2019-03-25 12:14:36,265 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3-sources.jar
+2019-03-25 12:14:36,648 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3-sources.jar
+2019-03-25 12:14:37,185 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-sources.jar
+2019-03-25 12:14:37,674 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-sources.jar
+2019-03-25 12:14:38,322 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4-sources.jar
+2019-03-25 12:14:38,624 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4-sources.jar
+2019-03-25 12:14:39,299 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-connector-basic/1.1.1/maven-resolver-connector-basic-1.1.1-sources.jar
+2019-03-25 12:14:39,527 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-connector-basic/1.1.1/maven-resolver-connector-basic-1.1.1-sources.jar
+2019-03-25 12:14:40,068 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3-sources.jar
+2019-03-25 12:14:40,642 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3-sources.jar
+2019-03-25 12:14:41,139 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24-sources.jar
+2019-03-25 12:14:41,463 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24-sources.jar
+2019-03-25 12:14:41,963 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4-sources.jar
+2019-03-25 12:14:42,151 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4-sources.jar
+2019-03-25 12:14:42,704 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7-sources.jar
+2019-03-25 12:14:42,813 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7-sources.jar
+2019-03-25 12:14:43,316 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/hawtjni/hawtjni-runtime/1.16/hawtjni-runtime-1.16-sources.jar
+2019-03-25 12:14:43,502 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/hawtjni/hawtjni-runtime/1.16/hawtjni-runtime-1.16-sources.jar
+2019-03-25 12:14:44,010 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-freebsd32/1.8/jansi-freebsd32-1.8-sources.jar
+2019-03-25 12:14:44,287 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-freebsd32/1.8/jansi-freebsd32-1.8-sources.jar
+2019-03-25 12:14:44,817 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-freebsd64/1.8/jansi-freebsd64-1.8-sources.jar
+2019-03-25 12:14:45,098 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-freebsd64/1.8/jansi-freebsd64-1.8-sources.jar
+2019-03-25 12:14:45,600 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-linux32/1.8/jansi-linux32-1.8-sources.jar
+2019-03-25 12:14:45,826 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-linux32/1.8/jansi-linux32-1.8-sources.jar
+2019-03-25 12:14:46,324 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-linux64/1.8/jansi-linux64-1.8-sources.jar
+2019-03-25 12:14:46,598 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-linux64/1.8/jansi-linux64-1.8-sources.jar
+2019-03-25 12:14:47,331 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-native/1.8/jansi-native-1.8-sources.jar
+2019-03-25 12:14:47,426 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-native/1.8/jansi-native-1.8-sources.jar
+2019-03-25 12:14:47,919 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-osx/1.8/jansi-osx-1.8-sources.jar
+2019-03-25 12:14:48,102 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-osx/1.8/jansi-osx-1.8-sources.jar
+2019-03-25 12:14:48,590 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-windows32/1.8/jansi-windows32-1.8-sources.jar
+2019-03-25 12:14:48,777 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-windows32/1.8/jansi-windows32-1.8-sources.jar
+2019-03-25 12:14:49,268 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-windows64/1.8/jansi-windows64-1.8-sources.jar
+2019-03-25 12:14:49,457 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi-windows64/1.8/jansi-windows64-1.8-sources.jar
+2019-03-25 12:14:49,957 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.17/jansi-1.17-sources.jar
+2019-03-25 12:14:50,174 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/fusesource/jansi/jansi/1.17/jansi-1.17-sources.jar
+2019-03-25 12:14:50,711 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3-sources.jar
+2019-03-25 12:14:50,987 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3-sources.jar
+2019-03-25 12:14:51,488 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.5.3/maven-compat-3.5.3-sources.jar
+2019-03-25 12:14:51,959 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-compat/3.5.3/maven-compat-3.5.3-sources.jar
+2019-03-25 12:14:52,446 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3-sources.jar
+2019-03-25 12:14:52,764 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3-sources.jar
+2019-03-25 12:14:53,252 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0-sources.jar
+2019-03-25 12:14:53,623 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0-sources.jar
+2019-03-25 12:14:54,239 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3-sources.jar
+2019-03-25 12:14:54,457 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3-sources.jar
+2019-03-25 12:14:54,957 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1-sources.jar
+2019-03-25 12:14:55,381 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1-sources.jar
+2019-03-25 12:14:55,945 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1-sources.jar
+2019-03-25 12:14:56,039 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1-sources.jar
+2019-03-25 12:14:56,548 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1-sources.jar
+2019-03-25 12:14:56,935 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1-sources.jar
+2019-03-25 12:14:57,435 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/squareup/okio/okio/1.14.0/okio-1.14.0-sources.jar
+2019-03-25 12:14:57,747 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/squareup/okio/okio/1.14.0/okio-1.14.0-sources.jar
+2019-03-25 12:14:58,350 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/3.0.0/wagon-file-3.0.0-sources.jar
+2019-03-25 12:14:58,444 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-file/3.0.0/wagon-file-3.0.0-sources.jar
+2019-03-25 12:15:24,271 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-25 12:15:38,856 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 12:15:38,914 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 12:15:38,927 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 12:15:38,938 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 12:15:38,944 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 12:15:38,944 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 13:58:26,381 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2019-03-25 13:58:54,105 [Worker-48: Launching algamoney-api (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api
+2019-03-25 13:58:54,106 [Worker-48: Launching algamoney-api (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean package
+2019-03-25 16:41:03,770 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:41:03,783 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:41:03,797 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:41:03,798 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:41:03,800 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:41:03,800 [Worker-94: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:41:04,849 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:41:04,851 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:41:04,851 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:41:04,852 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:41:04,854 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:41:04,854 [Worker-96: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:42:38,933 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:42:38,935 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:42:38,936 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:42:38,936 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:42:38,938 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:42:38,938 [Worker-91: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:49:35,320 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:49:35,321 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:49:35,322 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:49:35,323 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:49:35,325 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:49:35,325 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:49:46,742 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:49:46,744 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:49:46,745 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:49:46,746 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:49:46,747 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:49:46,748 [Worker-101: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:52:11,237 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:52:11,239 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:52:11,240 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-03-25 16:52:11,241 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 16:52:11,243 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:52:11,243 [Worker-99: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:54:30,015 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:54:30,018 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:54:30,018 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-03-25 16:54:30,019 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-25 16:54:30,023 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:54:30,023 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:56:01,268 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-25 16:56:01,271 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:56:01,271 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-25 16:56:01,272 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-25 16:56:01,275 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-25 16:56:01,276 [Worker-100: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-25 16:57:02,045 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2019-03-25 16:57:27,839 [Worker-107: Launching algamoney-api (2)] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api
+2019-03-25 16:57:27,840 [Worker-107: Launching algamoney-api (2)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B clean install -DskipTests
+2019-03-26 12:32:06,813 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-03-26 12:32:47,356 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-26 12:32:47,579 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-26 12:32:47,585 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-03-26 12:32:47,607 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2019-03-26 12:32:47,636 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-26 12:32:47,636 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
+2019-03-26 12:32:49,968 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/target/generated-sources/annotations added.
+2019-03-26 12:32:49,971 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-26 12:32:49,972 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-26 12:32:49,972 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-03-26 12:32:49,973 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-03-26 12:32:49,974 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/lincolnjohn/Desenvolvimento/AlgaWorks/Fullstack-Angular-Spring/Projeto/fullstackAngularSpring/algamoney-api/src/test/resources
