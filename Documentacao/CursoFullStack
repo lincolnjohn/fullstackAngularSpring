@@ -1699,7 +1699,7 @@ Módulo 17 -Implementando os serviços do projeto:
 		- Uando HttpClient pela versão do Angular 6.
 
 		- Quando do levantamento do servidor back-end é necessário informar o parâmetro para ele permitir acesso apartir do front-end
-		Angular "$>java -jar algamoney-api-1.0.0-SNAPSHOT.jar --spring.datasource.username=root --spring.datasource.password=admin		--spring.profiles.active=basic-security --algamoney.origin-permitida=http://localhost:4200".
+		Angular "$>java -jar algamoney-api-1.0.0-SNAPSHOT.jar --spring.datasource.username=root --spring.datasource.password=admin --spring.profiles.active=basic-security --algamoney.origin-permitida=http://localhost:4200".
 
 
 |------------------------------------------------------------------------------------------>[29/03/2019]
@@ -1724,8 +1724,63 @@ Módulo 17 -Implementando os serviços do projeto:
 			      });*/
 			  }
 
+|------------------------------------------------------------------------------------------>[01/04/2019]
+
+	Aula 17.4. Adicionando filtro por datas na pesquisa de lançamentos:
+
+		- Fazendo testes na API com Postman.
+
+		- Instalar a biblioteca Moment.js, que converte string em data no javaScript(http://momentjs.com/):
+
+			* "$>npm install moment --save" 
+
+		- O componente "p-table" do primeng não possui o parâmetro emptyMessage="Nenhum lançamento encontrado", substituir:
+		
+		 	<div *ngIf="lancamentos.length==0">
+                <span style="font-weight: bold"> Nenhum Lançamento encontrado </span>
+            </div>  	
 
 
+    Aula 17.5. Implementando a paginação no serviço de lançamentos:
+
+    	- API já foi implementada para executar a paginação do sistema, quando for solicitada uma consulta.
+
+    	- Usando postman posso passar parâmetros de paginação para API, como exemplo "page" e "size" que respectivamente identificam
+    	a página que vai ser exibida e quantos registros por páginas.
+
+    	- Na classe "LancamentoFiltro" adicionar as propriedades "page" e "size".
+
+
+    Aula 17.6. Configurando a paginação lazy do PrimeNG:
+
+    	- Por padrão o componente do Primeng faz a paginação no lado cliente (browse), que não é aconselhado a realizar quando
+    	temos um número grande de registro.
+
+    	- A implementação que vamos fazer controla está paginação, realizando por demanda (Lazy). Somente quando o cliente solicitar
+    	uma nova página o sistema faz a consulta desta, substituindo atual pela nova.
+
+    	- Utilizar uma paginação eficiênte para uma quantidade grande de dados, diminuindo a quantidade de banda e deixando aplicação
+    	mais leve.
+
+    	- Para utilizar a versão mais nova primeng e angular, consultei Aula 25.12
+
+|------------------------------------------------------------------------------------------>[02/04/2019]
+
+	Aula 17.7. Desafio: criando a consulta e listagem de pessoas:
+
+		- "pesquisar(pagina=0)" significa que o método pesquisar recebe o parâmetro "pagina". Mas note que o parâmetro já está recebendo
+		um valor, que é o zero "pagina = 0". Chamamos isso de Default-initialized parameters, ou seja, definimos um valor padrão de
+		inicialização para o parâmetro. Neste caso se chamarmos a função "pesquisar()" sem nenhum parâmetro o valor da variável "pagina" será
+		zero, caso a gente passe algum parâmetro, o valor passado é o que será o valor da variável "pagina".
+
+		- O valor entre os acentos graves ``, representam as Template Strings. Isso É algo definido no Javascript, logo, o Typescript 
+		herdou esta funcionalidade. O Template String permite que coloquemos variáveis ou expressões que retornem String juntamente 
+		com a String escrita (hard code), exemplo: `texto string ${expression} texto string` Neste caso teríamos uma String e o valor 
+		da variável ou expressão ${expression} será adicionado na String final. De forma similar, sem utilizar Template String, faríamos 
+		assim: "texto string " + expression + " texto string". O resultado dos dois trechos de código são equivalentes, mas a utilização 
+		de Template String são mais elegantes, de fácil legibilidade e nos dá mais possibilidades.
+
+		
 
 
 	

@@ -6,14 +6,18 @@
               </div>
               <div class="ui-g-12 ui-fluid">
                 <label>Descrição</label>
-                <input pInputText type="text" name="descricao" [(ngModel)]="descricao">
+                <input pInputText type="text" name="descricao" [(ngModel)]="filtro.descricao">
               </div>
 
               <div class="ui-g-12">
                 <label style="display: block">Vencimento</label>
-                <input pInputText type="text" style="width: 95px;margin-right: 4px">
+                <p-calendar dateFormat="dd/mm/yy" [inputStyle]="{width: '95px'}"
+                  name="vencimentoInicio" [(ngModel)]="filtro.dataVencimentoInicio"
+                  [monthNavigator]="true" [yearNavigator]="true" yearRange="1980:2030" ></p-calendar>
                 <label >até</label>
-                <input pInputText type="text" style="width: 95px;margin-left: 4px">
+                <p-calendar dateFormat="dd/mm/yy" [inputStyle]="{width: '95px'}"
+                  name="vencimentoFim" [(ngModel)]="filtro.dataVencimentoFim"
+                  [monthNavigator]="true" [yearNavigator]="true" yearRange="1980:2030"></p-calendar>
               </div>
               <div class="ui-g-12">
                 <button pButton type="submit" label="Pesquisar"></button>
@@ -22,7 +26,10 @@
       </div>
       <div class="ui-g">
         <div class="ui-g-12">
-            <p-table [value]="lancamentos" [paginator]="true" [rows]="3" [responsive]="true" >
+            <p-table [value]="lancamentos" [paginator]="true" [responsive]="true"
+                [rows]="filtro.itensPorPagina"
+                [lazy]="true" [totalRecords]="totalRegistros"
+                (onLazyLoad)="aoMudarPagina($event)" >
                 <ng-template pTemplate="header">
                   <tr>
                     <th>Pessoa</th>
@@ -56,6 +63,9 @@
 
                 </ng-template>
               </p-table>
+              <div *ngIf="lancamentos.length==0">
+                <span style="font-weight: bold"> Nenhum Lançamento encontrado </span>
+              </div>
 
         </div>
         <div class="ui-g-12">
