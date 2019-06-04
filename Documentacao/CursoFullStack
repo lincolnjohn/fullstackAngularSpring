@@ -1781,17 +1781,295 @@ Módulo 17 -Implementando os serviços do projeto:
 		de Template String são mais elegantes, de fácil legibilidade e nos dá mais possibilidades.
 
 		
+|------------------------------------------------------------------------------------------>[15/04/2019]
+
+	
+	Aula 17.7. Desafio: criando a consulta e listagem de pessoas: [ ok ]
+
+		- Similar a Lançamento, implementar filtro para buscar por nome, paginação lazy e implementar um método listarTodas que 
+		vai ser utilizada em um combo-box.
+
+	
+	Aula 17.8. Excluindo lançamentos e o decorador @ViewChild:
+
+		- Como ação apos exclusão de acordo com fórum implementei "this.pesquisar(this.filtro.pagina);"
+	 	
+
+	Aula 17.9. Adicionando mensagem de sucesso com Angular Toasty(este componente somente funciona até o Angular4) :
+
+		- Componente do Angular https://github.com/akserg/ng2-toasty:
+
+			* npm install ng2-toasty --save .
+
+			* Adicionar o css do ng2-toasty em ".angular-cli.json".
+
+		- O componete que substitui este é https://github.com/emonney/ngx-toasta
+		
+		- Vou adotar toast do primeng.
 
 
+|------------------------------------------------------------------------------------------>[22/04/2019]
+
+	
+	Aula 17.10. Adicionando diálogo de confirmação antes da exclusão:
+
+		- Utilizar o componente do primeeng "<p-confirmDialog>", para exibir um dialogo de confirmação da exclusão.
+
+		- Utilizar a bliblioteca de icones do primeng "PrimeIcons".
+
+
+	Aula 17.11. Alterando o locale da aplicação para pt-BR:
+
+		- O exemplo da aula não funcionou para a nova versão do Angular, na documentação 
+		https://angular.io/guide/i18n#setting-up-the-locale-of-your-app :
+
+			* Arquivo app.modules.ts
+
+			* 	import { registerLocaleData } from '@angular/common';
+				import localePt from '@angular/common/locales/pt';
+				import { LOCALE_ID } from '@angular/core';
+
+				registerLocaleData(localePt);
+
+				@NgModule({.....})
+				 providers: [
+				    ......
+				   {provide: LOCALE_ID, useValue: 'pt-BR'}
+
+				  ],
+
+
+	Aula 17.12. Criando um serviço de tratamento de erros:
+
+		- Comando para criar serviço $>ng g s core/error-handler --skipTests .
+
+		- Pelas boas práticas apenas o app.modules import o core.modules .
+
+		- Como estou usando "Toast" do PrimeNg a implementação da mensagem de erro ficou diferente do exemplo.
+
+
+|------------------------------------------------------------------------------------------>[29/04/2019]
+
+	Aula 17.13. Desafio: implementando a exclusão de pessoas :[ok]
+
+		- As pessoas que possuem vinculo com lançamento não podem ser excluidas, vai dar uma mensagem de erro de 
+		"Operação não permitida". Para testarmos precisamos primeiro excluir o lançamento e depois a pessoa.
+
+		- Implementar a exclusão de forma semelhante ao lançamento.
+
+
+	Aula 17.14. Desafio: mensagem de erro de usuário na exclusão de pessoa: [ok]
+	
+		- Quando API retorna um erro da classe 4xxx (400, 401, 404...), significa que o cliente erro alguma informação na passagem 
+		da requisição.
+
+		- A API retorna erro "400 bad request" , quando tentamos deletar um usuário que tem lançamento vinculado a ele
+		um erro de banco de dados "ConstraintViolation".
+
+		- A API retorna erro "404 not found", recurso nã encontrado tentamos deletar um usuário que não existe.
+
+		- Implementei o desafio utilizando HttpErrorResponse.
+
+
+	Aula 17.15. Desafio: implementando a mudança de status de pessoas: [ok]
+
+		- Fiz alterações na solução para se adaptar a nova versão do Angular.
+
+
+	Aula 17.16. Desafio: implementando o serviço de listagem de categorias: [ok]
+
+		- Criar a classe service de categorias utilizando o Angular CLI $>ng g s categorias/categoria --skipTestes=false
+
+
+|------------------------------------------------------------------------------------------>[02/05/2019]
+
+	
+	Aula 17.17. Listando as categorias cadastradas no dropdown:
+
+		- É preciso fazer uma conversão do array que se recebe do categoriaService para o padrão do PrimeNg.
+
+
+	Aula 17.18. Desafio: listando as pessoas cadastradas no dropdown [ok]
+	
+		- O método "listarTodas()" do categoria.service retorna um array com os dados que vieram no arquivo json, mas no caso de 
+		listar todas as pessoas do pessoa.service, foi utilizado paginação e os dados das pessoas no arquivo json vieram dentro de um 
+		array chamado "content", por isso foi utilizado response.content (fórum do curso).
+
+
+	Aula 17.19. Criando classes de modelo e usando no cadastro de lançamentos:
+
+		- O back-end já está habilitado para receber uma cadastro de lançamento.
+
+		- Preciso implementar no front-end o método para salvar lançamento.
+
+		- Fazer o bind entre as propriedades do lançamento component e o lançamento html.
+
+		- Criar uma classe de modelo que representa um Lançamento.
+
+		- Estava dando erro na inclusão de Lançamento:
+
+			* Mensagem de não autorizado, rodando no back-end a mensagem erá de que não existia ou inativa.
+
+			* Alterei a classe LancamentoService.validarPessoa(), gerei novamente o jar e o sistema funcionou.
+
+			* JSON para incluir Lancamento:
+				Body:
+					
+					{
+					    "codigo": 16,
+					    "descricao": "Aluguel de carro",
+					    "dataVencimento": "2017-07-15",
+					    "dataPagamento": "2017-07-11",
+					    "valor": 159,
+					    "observacao": "Ford ka",
+					    "tipo": "RECEITA",
+					    "pessoa": {
+					        "codigo": 2,
+					        "nome": null,
+					        "ativo": null,
+					        "endereco": null
+					    },
+					    "categoria": {
+					        "codigo": 1,
+					        "nome": null
+					    }
+					}
+
+			* Authorization: Type: Basic Auth, Username: admin@algamoney.com Password:admin	
+			
+			* Headers: Authorization: Basic YWRtaW5AYWxnYW1vbmV5LmNvbTphZG1pbg== ,  Content-Type: application/json
+
+
+
+|------------------------------------------------------------------------------------------>[08/05/2019]
+
+
+	Aula 17.21. Desafio: implementando o cadastro de pessoas: 
+
+		- Similar ao Cadastro de Lançamento.
+
+
+
+|------------------------------------------------------------------------------------------>[23/05/2019]
+
+	Aula 17.21. Desafio: implementando o cadastro de pessoas: (continuação) [ok]
+
+	- Como estou usando Angular 7 tive que pesquisar como fazer uma requisição "POST", que ficou diferente do exemplo da aula:
+
+	 adicionar(pessoa: Pessoa): Promise<Pessoa> {
+	      const httpOptions = {
+	      headers: new HttpHeaders({
+	        'Content-Type':  'application/json',
+	        'Authorization': 'Basic YWRtaW5AYWxnYW1vbmV5LmNvbTphZG1pbg=='
+		      })
+		    };
+	    return this.http.post<Pessoa>(this.pessoasUrl, pessoa, httpOptions)
+	    .toPromise();
+	  }
+
+	- Exemplo de inclusão via PostMan:
+
+		Content-Type: application/json,
+	    Authorization: Basic YWRtaW5AYWxnYW1vbmV5LmNvbTphZG1pbg==
+
+		body: http://localhost:8080/pessoas/{
+				"endereco":{
+					"logradouro":"teste",
+					"numero":"3333",
+					"complemento":"teste",
+					"bairro":"teste",
+					"cep":"44.444-444",
+					"cidade":"teste",
+					"estado":"te"
+					},
+				"ativo":true,
+				"nome":"teste"
+			}
+
+
+Módulo 18 -Roteamento e Navegação:
+
+
+	Aula 18.1 Introdução a rotas:
+
+		- Permite navegar no sistema através de rotas.
+
+		- Configurar no projeto as rotas através das urls.
+
+
+	Aula 18.2. Configurando rotas na aplicação:
+
+		- No app.module.ts (módulo raiz) configurar as rotas.
+
+		- Utilizar um componente do Angular <router-outlet></router-outlet>, que chama as rotas definidas de acordo com a url
+		digitada.
+
+
+	Aula 18.3. Navegando com Router Link:
+	
+		- Temos que evitar que a cada request a aplicação seja carregada.
+
+		- Para evitar esse recarregamento na navegação da aplicação utilizar uma diretiva do Angular "routerLink". Que faz apenas
+		a request da url solicitada, evitando o recarregamento da página inteira.
+
+		- Todo componemte que for utilizar o Router Link precisa importar o "RouterModule".
 	
 
 
-
-
-
-
+|------------------------------------------------------------------------------------------>[03/06/2019]
 
 	
+	Aula 18.4. Estilizando links da rota ativa:
+
+		- Aplicação do css feita de forma dinâmica, na rota atual utilizando routerLinkActive="ativo".
+
+
+	Aula 18.5. Recebendo parâmetros da rota:
+
+		- Criar uma rota parametrizada, usando token.
+
+		- Implementar o botão de editar na pesquisa lançamento.
+
+
+	Aula 18.6. Desafio: implementando os serviços de atualização e busca por código:
+	
+		- Para atualizar utilizar o método PUT do Http.
+
+		- Quando for atualizar tem que converte de string para Date, utilizar a biblioteca javaScript(http://momentjs.com/).
+
+		- A data de pagamento pode está nula, então é necessário testar antes de fazer o parser.
+
+		- Criar em lancamento.service.ts os métodos atualizar, buscarPorCodigo e converterStringParaDatas.
+ 
+
+ 	Aula 18.7. Preenchendo os campos na edição de lançamentos:
+
+ 		- Implementar método para carregar o Lançamento selecionado.
+
+
+
+|------------------------------------------------------------------------------------------>[04/06/2019]
+		
+
+	Aula 18.8. Salvando lançamentos editados:
+
+		- Implementar método que identifica se é uma atualização ou um novo Lançamento.
+
+		- Corrigir o campo "Observacao", não estava associada (binding) com objeto Lançamento.
+
+
+	Aula 18.9. Implementando navegação imperativa:
+
+		- Navegação programada, depois de realizar algumas tarefas rotear para determinada página.
+
+		- Quando mudamos de rota o componente é instanciado novamente. Ele perde parâmetros de valores
+		iniciais.
+
+		
+
+
+
+ 
 
 
 
@@ -1799,7 +2077,11 @@ Módulo 17 -Implementando os serviços do projeto:
 
 
 
+Nome:	DANIEL MOURA PEREIRA
+Login:	scorpion
+Unidade:	SECRETARIA GERAL
 
+ramal 8813, 7115, 7114, 7116
 
 
 

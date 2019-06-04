@@ -48,8 +48,8 @@ public class LancamentoService {
 		if(lancamento.getPessoa().getCodigo() !=null) {
 			pessoa = pessoaRepository.findById(lancamento.getPessoa().getCodigo()).get();
 		}
-		
-		if(pessoa == null || !pessoa.isInativo()){
+		//if(pessoa == null || ! pessoa.isInativo())
+		if(pessoa == null || pessoa.isInativo()){
 			 throw new PessoInexistenteOuInativaException();
 		}
 		

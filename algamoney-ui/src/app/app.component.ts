@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessageService } from 'primeng/components/common/api';
 
 @Component({
   selector: 'app-root',
@@ -31,5 +32,7 @@ import { Component } from '@angular/core';
 `]
 })
 export class AppComponent {
+
+  constructor(private messageService: MessageService) { }
 
 }
