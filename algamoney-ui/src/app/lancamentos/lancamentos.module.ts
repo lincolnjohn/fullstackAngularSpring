@@ -1,3 +1,4 @@
+import { LancamentosRoutingModule } from './lancamentos-routing.module';
 import { RouterModule } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
 import { SharedModule } from './../shared/shared.module';
@@ -28,7 +29,6 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    RouterModule,
 
     InputTextModule,
     ButtonModule,
@@ -44,15 +44,14 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     InputMaskModule,
     ToastModule,
 
-    SharedModule
+    SharedModule,
+    LancamentosRoutingModule
+
   ],
   declarations: [
     LancamentoCadastroComponent,
     LancamentosPesquisaComponent
   ],
-  exports: [
-    LancamentoCadastroComponent,
-    LancamentosPesquisaComponent,
-  ]
+  exports: []
 })
 export class LancamentosModule { }

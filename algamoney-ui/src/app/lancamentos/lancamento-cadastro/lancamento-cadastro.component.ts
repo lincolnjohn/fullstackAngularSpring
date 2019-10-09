@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { MessageService } from 'primeng/api';
 import { LancamentoService } from './../lancamento.service';
 import { Lancamento } from './../../core/model';
@@ -40,10 +41,13 @@ export class LancamentoCadastroComponent implements OnInit {
     private messageService: MessageService,
     private route: ActivatedRoute,
     private router: Router,
+    private title: Title
   ) { }
 
   ngOnInit() {
     const codigoLancamento =  this.route.snapshot.params['codigo'];
+
+    this.title.setTitle('Novo lançamento');
 
     if (codigoLancamento) {
       this.carregarLancamento(codigoLancamento);
@@ -61,6 +65,7 @@ export class LancamentoCadastroComponent implements OnInit {
     this.lancamentoService.buscarPorCodigo(codigo)
       .then(lancamento => {
         this.lancamento = lancamento;
+        this.atualizarTituloEdicao();
       })
       .catch(erro => this.errorHandler.handle(erro));
   }
@@ -107,6 +112,7 @@ export class LancamentoCadastroComponent implements OnInit {
       .then(lancamento =>{
         this.lancamento = lancamento;
         this.messageService.add({severity: 'success', detail: 'Lançamento atualizado com sucesso!'})
+        this.atualizarTituloEdicao();
       } )
       .catch(erro => this.errorHandler.handle(erro));
 
@@ -119,6 +125,10 @@ export class LancamentoCadastroComponent implements OnInit {
         this.lancamento = new Lancamento();
       }.bind(this), 1);
       this.router.navigate(['/lancamentos/novo']);
+  }
+
+  atualizarTituloEdicao() {
+    this.title.setTitle(`Edição: ${this.lancamento.descricao}`);
   }
 
 }

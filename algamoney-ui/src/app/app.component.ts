@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { MessageService } from 'primeng/components/common/api';
 
@@ -33,6 +34,11 @@ import { MessageService } from 'primeng/components/common/api';
 })
 export class AppComponent {
 
-  constructor(private messageService: MessageService) { }
+  constructor(private messageService: MessageService,
+    private router: Router) { }
+
+  exibindoNavbar() {
+    return this.router.url !== '/login';
+  }
 
 }

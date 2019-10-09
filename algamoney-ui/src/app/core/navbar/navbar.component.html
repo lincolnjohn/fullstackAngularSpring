@@ -5,14 +5,19 @@
         <a href="javascript:;" class="navbar-toggle" (click)="exibindoMenu = !exibindoMenu">
           <i class="fa fa-bars"></i>
         </a>
+        <!-- <button type="button" (click)="criarNovoAccessToken()" >Novo access token</button> -->
       </div>
     </div>
   </div>
   <ul class="navbar-menu" [hidden]="!exibindoMenu">
-    <li class="navbar-usuario">Usuário</li>
-    <li class="navbar-menuitem" routerLinkActive="ativo"> <a routerLink="/lancamentos">Lançamentos</a> </li>
-    <li class="navbar-menuitem" routerLinkActive="ativo"><a routerLink="/pessoas">Pessoas</a></li>
-    <li class="navbar-menuitem"><a href="#">Logout</a></li>
+    <li class="navbar-usuario">{{auth.jwtPayload?.nome}}</li>
+    <li class="navbar-menuitem" routerLinkActive="ativo" *ngIf="auth.temPermissao('ROLE_PESQUISAR_LANCAMENTO')">
+      <a routerLink="/lancamentos">Lançamentos</a> </li>
+    <li class="navbar-menuitem" routerLinkActive="ativo" *ngIf="auth.temPermissao('ROLE_PESQUISAR_PESSOA')">
+      <a routerLink="/pessoas">Pessoas</a></li>
+    <li class="navbar-menuitem">
+      <a href="javascript:;" (click)="logout()" >Logout</a>
+    </li>
   </ul>
 
 </nav>
